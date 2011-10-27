@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="6ee0f891-2bad-4782-8c7a-0be841ed6799" name="CaseVide" linkedPackageId="555f47a7-137a-4de2-8eff-e8575859e1ca" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b46be745-a09e-4c29-9642-1a27cb5c5916">
+      <elementDefinition Id="1f064719-274a-482a-9011-441ea710e7d1" />
+      <body>Fin du tour</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="df6d0537-8a19-488d-b75b-c2500f02190d" LastKnownName="ActivityFinal2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="ac940b1b-96fd-4be5-ab89-739836fd3a80">
+      <elementDefinition Id="d4ef0628-5d3e-45b8-b0d2-84cd8944ffcb" />
+      <body>Voir Diagramme d'états-transitions GestionTir</body>
+      <annotatedElements>
+        <objectNodeMoniker Id="4a949eba-a92f-4bc1-85c8-5ac149cda5c0" LastKnownName="GestionTir" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="d03811b2-8d68-4261-a4c0-f2db04681459">
+      <profileInstance Id="ba7e4e8d-a09e-41d7-99e2-09b97969255a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="738e75ab-6c45-44ab-b847-b41aa7930459">
+      <profileInstance Id="1ac54108-b9de-47ed-b86b-a19523afeddc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b15fac2c-132e-4b1a-af2b-dec66185ba87" name="CaseVide" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="31633092-1627-42d0-af75-8bcd30a5c3cd" />
+        <nodes>
+          <opaqueAction Id="a76611b2-88d9-4e39-a345-3d93e6abc5e7" name="Changer joueur" isLeaf="false">
+            <elementDefinition Id="68dc127b-d535-4ad3-a466-70da3132fc2f" />
+            <flowNodeTargets>
+              <controlFlow Id="5ab83bc0-8e09-49da-970c-0be28ae83cef" isLeaf="false">
+                <activityFinalNodeMoniker Id="df6d0537-8a19-488d-b75b-c2500f02190d" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="7d08cbf2-5409-452c-9c37-e5d2cef3bf13" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="9d5d9318-4b37-4c27-b155-c653f25472c1" name="Decision1" isLeaf="false">
+            <elementDefinition Id="bdf3c3e0-3c91-4baa-86f7-89667c99effa" />
+            <flowNodeTargets>
+              <controlFlow Id="eed1cc28-e19c-46b9-abeb-7f209304734c" isLeaf="false">
+                <opaqueActionMoniker Id="a76611b2-88d9-4e39-a345-3d93e6abc5e7" LastKnownName="Changer joueur" />
+                <elementDefinition Id="ff3f9865-3e28-4fd2-9ebd-2b6757195200" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="dca924e8-07a0-43c9-8d0a-70b865e74b81" guard="volonté de tirer" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="4a949eba-a92f-4bc1-85c8-5ac149cda5c0" LastKnownName="GestionTir" />
+                <elementDefinition Id="db1f8402-3393-44de-89ab-b0f40dcd9f8d" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <activityFinalNode Id="df6d0537-8a19-488d-b75b-c2500f02190d" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="5063cdcd-ebad-4e81-8af8-7cf19a60d3f8" />
+          </activityFinalNode>
+          <initialNode Id="12b380b8-2d69-4cb7-8927-b75d16710758" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d38813e8-648a-4138-9811-2b92fb37ea0c" />
+            <flowNodeTargets>
+              <controlFlow Id="f08e06e5-ec27-4ba2-9347-879175faac25" isLeaf="false">
+                <decisionNodeMoniker Id="9d5d9318-4b37-4c27-b155-c653f25472c1" LastKnownName="Decision1" />
+                <elementDefinition Id="64b32eac-57e2-4420-b465-1326b85c39cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <objectNode Id="4a949eba-a92f-4bc1-85c8-5ac149cda5c0" name="GestionTir" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="daa8c18c-fab8-4da7-9bb0-bbdb146203d3" />
+            <objectFlowTargets>
+              <objectFlow Id="b7b1b429-adce-4e85-bd3d-0dfffc9e6ff3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="a76611b2-88d9-4e39-a345-3d93e6abc5e7" LastKnownName="Changer joueur" />
+                <elementDefinition Id="6470744b-76b5-442b-8e14-bd7766a48adc" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="c8095b94-4c6a-409b-a008-e525da7260a8" name="2147483647" value="2147483647">
+                <elementDefinition Id="540d02ed-117c-4896-a8b1-eded46b8b60b" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="555f47a7-137a-4de2-8eff-e8575859e1ca" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ced00c80-fa07-4722-a049-9aa5f0e948b2" name="UMLUseCaseDiagram1" linkedPackageId="89dbe347-2048-4ec6-86f0-6eebeb685bb9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="ff3f89a8-7bac-46ee-a165-a07ca5914b37">
+      <profileInstance Id="6461c49e-0bf7-4bc4-822b-e66ee495b158" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="942cc833-e1f8-4281-9290-f51e48557fd6">
+      <profileInstance Id="2b9fe019-d9e7-4060-bd11-80eae585e3d6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="755ede73-a769-4ac6-996e-e2c141b0c586" name="Joueur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea3fe28e-e125-4a8d-a1f0-d080564bb6b1" />
+        <targetEnds>
+          <association Id="3ae6410c-df1e-46f3-a9ef-8984b2082fbc" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Effectuer un déplacement" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3df2b60c-7000-4c23-8589-7189acac0262" LastKnownName="Effectuer un déplacement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5dcf0541-f3f7-499e-bffa-5ac66c27c787" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2919e683-22c1-4689-8d45-0f0c07b4aabb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db52e90d-8ddc-4f90-822c-52feb537efd0" name="Effectuer un déplacement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8dd7a192-5b27-43b7-b3d1-b0273649c95d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="326b49ce-64c8-4ce7-b7a8-cb865f3c0541" />
+          </association>
+          <association Id="cacef5ed-667b-47ef-beca-6dc3b4c5d3eb" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Tirer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ad75cfda-5909-47ea-a6b2-febfa62c5907" LastKnownName="Tirer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23f0189b-9ebb-49b0-a5cf-4ac8fc79848d" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="62944063-1c3d-4055-91ff-b41abf71727b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="26a74c61-7bb5-41a5-8a21-fc9e95e1904c" name="Tirer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b679b2e9-897d-463c-8884-20f63b39fe93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eb27818e-5b4b-4ec2-8717-f5bbc0669592" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3df2b60c-7000-4c23-8589-7189acac0262" name="Effectuer un déplacement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e59a6b89-fd63-4456-a442-b431131741f0" />
+        <additions>
+          <include Id="de191a92-fd10-45f0-ac2a-6f270b858283">
+            <useCaseMoniker Id="0772378a-520b-4287-9b40-c0548f71845e" LastKnownName="Lancer dés" />
+            <elementDefinition Id="38869b06-6f81-4082-9a58-50f01170cda4" />
+          </include>
+          <include Id="e03b4809-0346-42c7-a99d-e45d8193b071">
+            <useCaseMoniker Id="32c57c81-1d15-4105-821a-78c5175fcf61" LastKnownName="Sélectionner le nombre de dés pour le déplacement" />
+            <elementDefinition Id="11015689-e52b-43d7-b4fc-64d33bbc002f" />
+          </include>
+          <include Id="a95f9c58-9577-4ff0-a318-ece4c3c36741">
+            <useCaseMoniker Id="2830875c-390f-4c9d-9df4-876a715077d0" LastKnownName="Choisir la case d'arrivée" />
+            <elementDefinition Id="f176a49c-f921-44fc-b3e2-d54e0a4cdbb7" />
+          </include>
+          <include Id="1e1aa971-847c-4eb6-b243-ee6726d01eef">
+            <useCaseMoniker Id="d07b5132-7dae-467a-9441-38732f24f95c" LastKnownName="Vérifier le type de la case d'arrivée" />
+            <elementDefinition Id="80db6c22-0cd6-49f1-a99d-3eb3c0666752" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ad75cfda-5909-47ea-a6b2-febfa62c5907" name="Tirer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="07dbc0f2-b25d-4ced-a73b-7e4a5c9748d8" />
+        <additions>
+          <include Id="8a1df4f9-f23e-4307-91d1-7784d7ef2363">
+            <useCaseMoniker Id="842b4def-a322-4795-99e7-742a1fdadc92" LastKnownName="Viser une case" />
+            <elementDefinition Id="f539a92a-e21c-4eae-a3e0-057088bc7ddc" />
+          </include>
+          <include Id="07cf755b-1b62-496f-b884-6693dc87c4e5">
+            <useCaseMoniker Id="102f47f3-98d4-4db7-9dc4-5a6afb1cf89f" LastKnownName="Vérifier si une cible a été touchée" />
+            <elementDefinition Id="aefde570-a78e-457f-a41d-4a7778c2d7d6" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0772378a-520b-4287-9b40-c0548f71845e" name="Lancer dés" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c8ee3c6-8d21-466f-91a1-d81d2825c45c" />
+        <targetEnds>
+          <association Id="4030420e-5e0f-404b-a2b0-679d1d4e8027" isDerived="false" sourceEndRoleName="Lancer dés" targetEndRoleName="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="91cc0774-c100-49a0-8d9e-24de0bf4b550" LastKnownName="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="843d494c-ac39-4fd0-86bb-a267982ee176" name="Lancer dés" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="eb4a3897-7cdf-48a1-9c3c-3e2245ce5534" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec008b33-02ca-4538-8e30-8c336c0af854" name="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e433afb-d2d1-44a0-83d1-96c78ec5ada3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b98d16a-1a97-484d-ae4a-31be49e346b0" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="32c57c81-1d15-4105-821a-78c5175fcf61" name="Sélectionner le nombre de dés pour le déplacement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0573598-286f-45fc-980d-2291e8dbe6a3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2830875c-390f-4c9d-9df4-876a715077d0" name="Choisir la case d'arrivée" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="386dd137-9696-4e91-a53a-1f3ea82ccf09" />
+        <targetEnds>
+          <association Id="ccfa0466-cc0e-475f-96e9-4897c979f9eb" isDerived="false" sourceEndRoleName="Choisir la case d'arrivée" targetEndRoleName="Vérifier si le déplacement est possible" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bc2ee9a1-74be-4c0f-85df-17e2af37b2c8" LastKnownName="Vérifier si le déplacement est possible" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8581f3f-7693-4958-867f-18ec65ccb8a8" name="Choisir la case d'arrivée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="021da6bf-690b-46f7-9640-7eacf78a28b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4359b9e0-825a-4f3c-8f9a-42a80b7bf95d" name="Vérifier si le déplacement est possible" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="afc2e087-9c20-4eb2-a8b7-6d09151ceac3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f04a3317-1a95-4b8e-96c7-26804e8cb80e" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="91cc0774-c100-49a0-8d9e-24de0bf4b550" name="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da91dceb-a817-4753-8d2f-1e17c729c484" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="329aec6b-30dd-4cad-a6b9-ab4cab51a6b3" name="Moteur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58c63c77-0506-4a74-907e-4f9ec85fc8d8" />
+        <targetEnds>
+          <association Id="fd28d86e-85cf-4612-aa91-306da69fd7f9" isDerived="false" sourceEndRoleName="Moteur" targetEndRoleName="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="91cc0774-c100-49a0-8d9e-24de0bf4b550" LastKnownName="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d81e06d-f255-4ae3-a9e0-ef2f663c5acb" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="111f43a7-64ad-4a2a-a25f-d29572d76fe2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="040f0e8a-e9f6-4cd2-a7bf-d4adcf47a728" name="Vérification du type du vaisseau pour connaître le nombre de dés à lancer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17ef46dc-8d8a-418d-a5dc-b96093275fbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e179802f-2072-471c-b56f-d4e6cc6b2388" />
+          </association>
+          <association Id="bdd89e1a-a128-4073-a7d6-cb2959e43088" isDerived="false" sourceEndRoleName="Moteur" targetEndRoleName="Vérifier si le déplacement est possible" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bc2ee9a1-74be-4c0f-85df-17e2af37b2c8" LastKnownName="Vérifier si le déplacement est possible" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b74071a8-b7f2-447c-9242-c3918e3b0d4d" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7bab6f8-3b44-4405-845f-9dfbe6408f7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23fc8a25-751d-402a-bec5-3355c7ccbd30" name="Vérifier si le déplacement est possible" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="082f900c-5269-443d-85fa-50dadd47f43b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7b995ce-0fa1-4dbb-b9b3-bdc042579849" />
+          </association>
+          <association Id="527c871b-5775-4a3e-a717-f51f890f30be" isDerived="false" sourceEndRoleName="Moteur" targetEndRoleName="Modifier la flotte" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="58b8026a-e259-4238-8ec3-2a03e3727159" LastKnownName="Modifier la flotte" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="747ea85e-d472-44b6-97d1-93bb142fa8d9" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4607a6be-25b8-4664-8be3-495b027dc7cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="713703c2-191e-4912-8284-80bb6bcf0e8f" name="Modifier la flotte" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5de3d15-d8bd-437f-808c-0517ca48c37c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="284282e6-3bf2-4e96-8549-3a5fe62b12db" />
+          </association>
+          <association Id="1d5f1542-ad91-485a-a5c9-e9e4ecb2d7c3" isDerived="false" sourceEndRoleName="Moteur" targetEndRoleName="Vérifier si une cible a été touchée" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="102f47f3-98d4-4db7-9dc4-5a6afb1cf89f" LastKnownName="Vérifier si une cible a été touchée" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16e0d313-d22a-4656-8e4b-ddc298760ca5" name="Moteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="11031bf4-4855-4f65-8400-007e1640eeec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1983f404-10f1-4e92-9894-596991df6af9" name="Vérifier si une cible a été touchée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="600ae84e-861b-422a-b145-278514a9fbec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="66c12aee-7fc4-4e20-a4ef-8aa4fdfc891f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d07b5132-7dae-467a-9441-38732f24f95c" name="Vérifier le type de la case d'arrivée" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f61fee78-0134-40fa-8929-bcdea4861b03" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bc2ee9a1-74be-4c0f-85df-17e2af37b2c8" name="Vérifier si le déplacement est possible" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f50dc4b-1233-431e-b90c-a2e67332520f" />
+        <additions>
+          <include Id="e47c15a8-e215-4774-a977-7059c6ca3a75">
+            <useCaseMoniker Id="282147d2-bf38-4e88-a8a9-0dde2ab81ab4" LastKnownName="Case vide ou non ?" />
+            <elementDefinition Id="dace3c34-4d26-43d0-95b0-ec2b970264a1" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="282147d2-bf38-4e88-a8a9-0dde2ab81ab4" name="Case vide ou non ?" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80b45e64-fe41-477f-b674-287bd9032d25" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="23b1eaf9-9388-44f7-929c-6e8234f057c9" name="Case Station Orbitale" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="231b7265-9e8b-406b-9a57-333493c7a049" />
+        <generalsInternal>
+          <generalization Id="522b3e0b-7062-4f5c-9852-d0027f5596c2" isSubstitutable="false">
+            <useCaseMoniker Id="d07b5132-7dae-467a-9441-38732f24f95c" LastKnownName="Vérifier le type de la case d'arrivée" />
+            <elementDefinition Id="14ac503d-5b22-4c98-b991-2e8a81e2d0fc" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a949ce21-9d1f-45c5-8321-a22c1eb5c3d8" name="Case Energie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dcfa0125-e3da-427c-aee6-35089d7eb807" />
+        <generalsInternal>
+          <generalization Id="fa13e754-c5bf-4a63-a726-1ace89158624" isSubstitutable="false">
+            <useCaseMoniker Id="d07b5132-7dae-467a-9441-38732f24f95c" LastKnownName="Vérifier le type de la case d'arrivée" />
+            <elementDefinition Id="2180fb6f-67f3-4d0e-a53c-b39bfe31650c" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="b3224132-ede7-4f66-82d0-4eaac2ddb606" isDerived="false" sourceEndRoleName="Case Energie" targetEndRoleName="Recharger son énergie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="77e23032-e132-4a69-ae14-578bebcf1685" LastKnownName="Recharger  son énergie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8e6b4a7-db80-4d9a-89a8-3f8de0f3efd4" name="Case Energie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e908e1c8-eb70-42cf-a8b5-f0721227c364" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28531b99-acf3-4ac4-985c-dffb715f594e" name="Recharger son énergie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8c03896-f3bc-4fc9-a30a-193f3743e8d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d1e2ea51-45c1-43d3-819e-9314df0862cc" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="60f590ea-679c-4a27-ac2b-7b5315c9e51a" name="Case Artefact" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4979a36d-9d10-404f-96d2-9aeae5e25be6" />
+        <generalsInternal>
+          <generalization Id="c4425d80-3bd3-415f-8c66-a8b3dd9634c9" isSubstitutable="false">
+            <useCaseMoniker Id="d07b5132-7dae-467a-9441-38732f24f95c" LastKnownName="Vérifier le type de la case d'arrivée" />
+            <elementDefinition Id="519d4f30-0ff2-459e-8a0d-915b1a32c4eb" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2e0b29ec-7af3-4e56-84a3-493043193563" name="Case Vide" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8793e82-c2c1-4e4f-a194-22ad40fc80ef" />
+        <generalsInternal>
+          <generalization Id="107a1fb0-f36e-40c5-9672-267678f8736f" isSubstitutable="false">
+            <useCaseMoniker Id="d07b5132-7dae-467a-9441-38732f24f95c" LastKnownName="Vérifier le type de la case d'arrivée" />
+            <elementDefinition Id="4f4c78e6-08d2-4564-9abf-558414757ba2" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="842b4def-a322-4795-99e7-742a1fdadc92" name="Viser une case" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99065a47-850c-4788-a655-0ce3b87189ad" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="102f47f3-98d4-4db7-9dc4-5a6afb1cf89f" name="Vérifier si une cible a été touchée" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44423d26-0aee-4ee9-a754-f59f3c6967d7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="58b8026a-e259-4238-8ec3-2a03e3727159" name="Modifier la flotte" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d51bc990-561d-4d92-8156-3108a3df3f79" />
+        <extendedCases>
+          <extend Id="516991ad-cea2-42e9-8463-56b1a735866e">
+            <useCaseMoniker Id="ad75cfda-5909-47ea-a6b2-febfa62c5907" LastKnownName="Tirer" />
+            <elementDefinition Id="183e7fb2-c6fd-4071-a10f-28865660a368" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="019fdbf0-7d7b-4dcd-8291-81cb3ccd3d14" name="Prendre Artefact" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="658bcb11-dc97-47fa-be4a-807bb8f66d0c" />
+        <extendedCases>
+          <extend Id="bd509f76-33fd-457e-90f5-7848b16042c0">
+            <useCaseMoniker Id="60f590ea-679c-4a27-ac2b-7b5315c9e51a" LastKnownName="Case Artefact" />
+            <elementDefinition Id="6c2602f7-605b-45aa-b820-9c3e2298a512" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="77e23032-e132-4a69-ae14-578bebcf1685" name="Recharger  son énergie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5cab568a-a9c4-41fa-89b3-a7092b0ce329" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d9550249-bcc1-4a5a-8ae1-b91f11419a80" name="Déposer Artefact" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="84eecd85-3578-4d91-a979-d52b8e13df06" />
+        <extendedCases>
+          <extend Id="fbcda724-3091-4673-88ef-ec2f5d8add74">
+            <useCaseMoniker Id="23b1eaf9-9388-44f7-929c-6e8234f057c9" LastKnownName="Case Station Orbitale" />
+            <elementDefinition Id="30d302fd-e550-404b-8389-15fb92d4aeff" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="89dbe347-2048-4ec6-86f0-6eebeb685bb9" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+  </package>
+</useCaseModelRoot>

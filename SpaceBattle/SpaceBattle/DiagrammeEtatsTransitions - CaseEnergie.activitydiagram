@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="528e45b5-7af3-4576-af6e-cf4e972298b7" name="CaseEnergie" linkedPackageId="2fb96dc1-58b9-40c2-93f5-2a60ed83772b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1f72f507-8eaa-425a-9425-505cf8aa828d" name="CaseEnergie" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="cff1575e-546a-4fed-a850-970568b4d8ba" />
+        <nodes>
+          <initialNode Id="bab94b5c-28a9-4d12-bf3f-c5ae237d53ec" name="Initial11" isLeaf="false">
+            <elementDefinition Id="f0db97dd-a08e-4f0a-b8b7-7e2bb45cf025" />
+            <flowNodeTargets>
+              <controlFlow Id="d3b3d14e-98cc-4f3c-a861-5a91c0e9a1a4" guard="charger vaisseau en énergie" isLeaf="false">
+                <opaqueActionMoniker Id="fa933747-51ed-409c-9a23-68116c6f8332" LastKnownName="Vaisseau chargé en énergie" />
+                <elementDefinition Id="3b6e57f3-3fc7-47da-81bc-024d8b6c8491" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="fa933747-51ed-409c-9a23-68116c6f8332" name="Vaisseau chargé en énergie" isLeaf="false">
+            <elementDefinition Id="340e3679-1d7e-4cd0-9125-9905e262b00e" />
+            <flowNodeTargets>
+              <controlFlow Id="9ee55086-c96f-433f-944a-8f120c137bfe" isLeaf="false">
+                <activityFinalNodeMoniker Id="030d474f-103c-4775-bda5-efabda27a21c" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="04005fd6-6d1a-4e1b-a46a-21c49ed9b051" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="030d474f-103c-4775-bda5-efabda27a21c" name="ActivityFinal21" isLeaf="false">
+            <elementDefinition Id="a2ab85b8-770f-41fc-9ea3-b461a8771b3e" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="2fb96dc1-58b9-40c2-93f5-2a60ed83772b" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7594d886-f0a4-4e79-b1e0-442a70ce1476">
+        <profileInstance Id="231849ea-39fa-45c9-acb9-ba7a36be44a0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0ce43b95-6409-47dd-9d0a-a48d1214ef74">
+        <profileInstance Id="fe571f89-739e-4253-a772-05b2b6ce0d43" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="898e9ae7-2038-4be5-a662-8eb04212e357" name="GestionTir" linkedPackageId="e55f9bac-eef2-466b-8ae8-28a20d82b619" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="fb7fc540-ca1f-4d35-adfd-80c07740cf41">
+      <elementDefinition Id="69f11881-d2ef-4c00-8087-f195c751146b" />
+      <body>Fin du tir</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="220513ff-267b-4ee9-b9aa-be66b27c4fa5" LastKnownName="ActivityFinal21" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="6892d295-be9b-4bd9-9ffb-c716b17ada95" name="GestionTir" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="2224550e-c244-4bbf-b1a1-abc451fcdaf2" />
+        <nodes>
+          <initialNode Id="bf7f05e4-dac5-4460-afd2-3cf40935c3d4" name="Initial11" isLeaf="false">
+            <elementDefinition Id="34370387-0b73-4731-8fcc-4eace83bdac8" />
+            <flowNodeTargets>
+              <controlFlow Id="ccda5cb1-58de-424a-890a-108820e50d24" isLeaf="false">
+                <decisionNodeMoniker Id="b7ae5492-4a1e-4c80-ad51-f18b6906d0f7" LastKnownName="Decision11" />
+                <elementDefinition Id="0601e33f-89b6-4ba2-82fb-87af283771fd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="b01cbc92-f80b-4f54-8171-ab4bd6c468d7" name="Case visé" isLeaf="false">
+            <elementDefinition Id="6002c41b-a147-463d-a646-57bb1e4c67e1" />
+            <flowNodeTargets>
+              <controlFlow Id="e9349dde-5694-46fe-8d31-c62793d3cebf" guard="tirer" isLeaf="false">
+                <opaqueActionMoniker Id="1131975e-c7b2-4334-815c-3a622ad76e41" LastKnownName="Tir effectué" />
+                <elementDefinition Id="1f5c8ab1-380f-4003-a04b-a210877e8499" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1131975e-c7b2-4334-815c-3a622ad76e41" name="Tir effectué" isLeaf="false">
+            <elementDefinition Id="7cb66754-ade8-430b-a14d-53b2026b5fb1" />
+            <flowNodeTargets>
+              <controlFlow Id="02fcdc54-116c-4e86-9a37-abac45d5ccf7" isLeaf="false">
+                <decisionNodeMoniker Id="c95817ff-a229-49c5-acdf-00eacfb92efb" LastKnownName="Decision21" />
+                <elementDefinition Id="a00ea9db-57e8-4c72-8e78-bf7023e9b5e1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b7ae5492-4a1e-4c80-ad51-f18b6906d0f7" name="Decision11" isLeaf="false">
+            <elementDefinition Id="447e9095-b477-40b6-b778-83948047547b" />
+            <flowNodeTargets>
+              <controlFlow Id="6ec267cf-dbba-45db-9351-46d869ed9607" guard="énergie suffisante &amp; viser case" isLeaf="false">
+                <opaqueActionMoniker Id="b01cbc92-f80b-4f54-8171-ab4bd6c468d7" LastKnownName="Case visé" />
+                <elementDefinition Id="aba547e3-982d-47e1-adc9-37353ad9e3cb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="220513ff-267b-4ee9-b9aa-be66b27c4fa5" name="ActivityFinal21" isLeaf="false">
+            <elementDefinition Id="ff6f2662-8bba-41ea-9dfa-6437d7dd2e90" />
+          </activityFinalNode>
+          <decisionNode Id="c95817ff-a229-49c5-acdf-00eacfb92efb" name="Decision21" isLeaf="false">
+            <elementDefinition Id="1c0d200e-1614-499b-b25d-997442fc0e05" />
+            <flowNodeTargets>
+              <controlFlow Id="baa08348-2549-449f-b652-ab5f8bf3e068" guard="cible touchée" isLeaf="false">
+                <opaqueActionMoniker Id="1c48364d-0101-4cb4-9609-55b8bbc24c8b" LastKnownName="Réussite tir" />
+                <elementDefinition Id="c66f3fae-0e48-421a-a08b-9d06ba952770" />
+              </controlFlow>
+              <controlFlow Id="9ffcde38-91ad-407d-9992-bdb06a32ab38" guard="cible ratée" isLeaf="false">
+                <opaqueActionMoniker Id="9b19fd58-c532-41b5-abb5-2c7de6858cb4" LastKnownName="Echec tir" />
+                <elementDefinition Id="316699f4-f25c-46ec-be57-8fae92b53a0b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="1c48364d-0101-4cb4-9609-55b8bbc24c8b" name="Réussite tir" isLeaf="false">
+            <elementDefinition Id="68945a5d-cf52-41c6-b066-487768c8c5b2" />
+            <flowNodeTargets>
+              <controlFlow Id="764995e2-25a4-4410-8f7d-45ac3bbc4bab" guard="changer vaisseau" isLeaf="false">
+                <decisionNodeMoniker Id="0792ff0e-42de-424b-805c-1e7cd6a2891a" LastKnownName="Decision4" />
+                <elementDefinition Id="91fa66c3-8b7e-4d59-8e6e-e180b6f02370" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9b19fd58-c532-41b5-abb5-2c7de6858cb4" name="Echec tir" isLeaf="false">
+            <elementDefinition Id="38bd1cb3-abe6-404b-9abc-96247f00034b" />
+            <flowNodeTargets>
+              <controlFlow Id="81a9715c-21eb-45a9-9577-0935df0aec03" isLeaf="false">
+                <activityFinalNodeMoniker Id="220513ff-267b-4ee9-b9aa-be66b27c4fa5" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="caeb5a71-f9e3-45f9-afbb-e79e2836719f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="0792ff0e-42de-424b-805c-1e7cd6a2891a" name="Decision4" isLeaf="false">
+            <elementDefinition Id="75b980d4-6740-4fd4-b8f1-0cc20e3821ab" />
+            <flowNodeTargets>
+              <controlFlow Id="fb20f930-a6f6-4df4-b5ef-a2f62745f3bc" guard="vaisseau = capsule de survie &amp; artefact" isLeaf="false">
+                <opaqueActionMoniker Id="8c6625c4-d3de-4745-8237-bb3ecc410a46" LastKnownName="Artefact récupéré" />
+                <elementDefinition Id="2b65e48a-7ce6-4ece-974f-e5a6fc3c2f43" />
+              </controlFlow>
+              <controlFlow Id="684f8b20-c143-4bcb-b14b-af1db9d994fc" guard="else" isLeaf="false">
+                <activityFinalNodeMoniker Id="220513ff-267b-4ee9-b9aa-be66b27c4fa5" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="32daa4f2-f0ab-402a-920a-adbbaa87c741" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="8c6625c4-d3de-4745-8237-bb3ecc410a46" name="Artefact récupéré" isLeaf="false">
+            <elementDefinition Id="139707e0-ac75-4246-aa4b-41660e992fed" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e55f9bac-eef2-466b-8ae8-28a20d82b619" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b670ae8a-c5c8-47f5-a8ef-3b5565eef97f">
+        <profileInstance Id="f7d13692-94f1-4891-8e25-16d88947f63f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c02ef320-f21c-4d36-b3b0-3662923c704b">
+        <profileInstance Id="9f61fa29-94a6-434e-aa5b-6845cf9c591d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

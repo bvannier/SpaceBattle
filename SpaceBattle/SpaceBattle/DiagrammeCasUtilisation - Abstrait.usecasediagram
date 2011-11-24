@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="6666810e-b56c-4b5d-ac4a-78221ea727b6" name="DiagrammeCasUtilisation" linkedPackageId="41a484d4-3169-4389-8c6d-a7578e8d7fe1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="a6183e43-03ef-4c90-900f-f09a19cebc31" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="30c1ed59-55ad-406b-8529-52fe9179acf8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e89ed2b6-a47d-472e-846f-218c089db623">
+          <propertyInstance Id="d349f5ae-6c8c-4f23-bd63-4493db5a793e" name="BaseName">
+            <elementDefinition Id="dde8a8ea-13a9-4729-8e40-7b74e59cd45c" />
+          </propertyInstance>
+          <elementDefinition Id="e0344c0a-9490-4727-acf6-86291ce8128a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6adabae3-7a5e-4fe9-9845-ca3da1b4871f">
+          <propertyInstance Id="8261ccdc-0a37-451b-809c-f8ea4693fe36" name="ClrAttributes">
+            <elementDefinition Id="d33d66b5-7182-45a6-bd6f-4cf5938fd70b" />
+          </propertyInstance>
+          <elementDefinition Id="6614bd4b-f5bb-4569-ace2-61147a65c45c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a1c9e486-075f-49c3-864a-a1c59c31aa2c">
+          <propertyInstance Id="87e77bc9-029a-40b9-ad6f-804759be747f" name="Usings">
+            <elementDefinition Id="724c6f1c-591a-43bf-a65b-856404b74de2" />
+          </propertyInstance>
+          <elementDefinition Id="05556ba8-5f71-4467-aa30-ff1d629196b6" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="0e493e04-b3c6-402f-88e0-e70ae821140d" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="15fdc1c7-8295-4678-977b-f52b822eb512" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0a45331a-f83e-420e-9ffe-36a149a56226">
+          <propertyInstance Id="8a0fdd15-6421-42bb-8fd6-581506b3db4c" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="4adb990b-7442-49c7-9a25-20242d3ad7b2" />
+          </propertyInstance>
+          <elementDefinition Id="9d06c7f7-3f88-4e7c-aa80-fc2fcd14df73" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fba1ffa7-2846-42a6-9b0d-121f8e4d80ca">
+          <propertyInstance Id="8f7d34ea-268e-48d9-955d-7a9f7b54e5e1" name="TemplateFilePath" value="ClassTemplate=C:\Documents and Settings\TEMP\Bureau\ClassTemplate.t4|EnumTemplate=C:\Documents and Settings\TEMP\Bureau\EnumTemplate.t4|InterfaceTemplate=C:\Documents and Settings\TEMP\Bureau\InterfaceTemplate.t4|StructTemplate=C:\Documents and Settings\TEMP\Bureau\StructTemplate.t4">
+            <elementDefinition Id="a69285b3-b881-44f0-99a3-24b0186d0f60" />
+          </propertyInstance>
+          <elementDefinition Id="d53b37ef-dd5c-4f6e-8cf0-9d5d821a76bd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="39f04981-0c3e-4ece-a3cd-7bfaeae9cf6f">
+          <propertyInstance Id="73e94780-a7e1-400f-8d75-4e1403a00b83" name="ProjectPath" value="ClassTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj|EnumTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj|InterfaceTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj|StructTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj">
+            <elementDefinition Id="52dd82c9-597c-4483-819f-13bb23cb382a" />
+          </propertyInstance>
+          <elementDefinition Id="b443aa86-cea1-4754-b301-4e400d120d67" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9a57ee13-b62a-44fa-b851-685480792fad">
+          <propertyInstance Id="2e8927c6-f906-4f5a-8be2-ba8431950e67" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="77af2fc6-ab3f-4872-9b55-6d6021acee0f" />
+          </propertyInstance>
+          <elementDefinition Id="55faf6da-a03f-4c09-95ef-b95055660e9c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5d3ac215-2a08-4b68-a19d-3d50aa68ea13">
+          <propertyInstance Id="e3986ff9-3247-41a0-9981-fcd16170194a" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="ec952289-5725-4000-a479-abee4fcc8c8b" />
+          </propertyInstance>
+          <elementDefinition Id="8275a092-54ec-4916-95f0-3978b901568a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9d580288-e373-47eb-b519-64479733bbc7">
+          <propertyInstance Id="6e693765-fe3a-4b98-a2b8-bc82722ccc31" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="93887b1f-8220-4782-b65b-3dd2d77e8524" />
+          </propertyInstance>
+          <elementDefinition Id="9c9b774a-f95b-42c8-b863-4a1cfc781b65" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bee21064-26de-4d5d-b0e7-d2a2eb0bb5e6">
+          <propertyInstance Id="9708ac41-f581-454d-b3c8-829943449a6b" name="Parameters">
+            <elementDefinition Id="a0f134f5-6a38-4410-9b67-7d6888908fc4" />
+          </propertyInstance>
+          <elementDefinition Id="49246f5d-0de5-479b-81c7-bcd72e8fe2fc" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1f7068e4-f45f-4992-a419-20b20421079b" name="Joueur2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a32c7882-a243-4d6f-8dc6-5cf54165f06a" />
+        <targetEnds>
+          <association Id="f8fff1fa-69c7-4c01-b1d6-da3c0f7d0cd0" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Effectuer un déplacement" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ff1a5e1d-18d2-465a-9ad3-48a5d686961b" LastKnownName="Effectuer un déplacement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a8a3206-d51c-4eb7-ae53-6333edbaea1a" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f785b4d-7bfa-4efc-a573-5fdc76f93e12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5584dc7-f38a-4e84-abb4-cd861abb04c6" name="Effectuer un déplacement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12473b5f-c646-415b-947d-3ee6b12f0bc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d47f1688-3743-4a48-80f1-a4d0109b3cd6" />
+          </association>
+          <association Id="1bb07316-2410-497d-bccc-d68e72cfaf1a" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Tirer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="96d44577-ad17-42be-a767-ac12b14777d2" LastKnownName="Tirer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30ec82f2-6c09-4325-9298-9ce7cd8dba29" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b093b6de-2305-43a0-8a52-e75d3df36bbd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5e90dea-349d-4bd6-906e-4da77b73f9cf" name="Tirer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1870d6c7-e094-4329-bc27-06c51e6efd88" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="65a91dbe-0f99-4f34-a715-0d4c93046221" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ff1a5e1d-18d2-465a-9ad3-48a5d686961b" name="Effectuer un déplacement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcfeed98-dda2-4cbf-8521-a5da2eb4a1d0" />
+        <extendedCases>
+          <extend Id="656daa5c-093a-4df9-9ee8-508e45625e03">
+            <useCaseMoniker Id="2e1f3444-a431-4e75-a880-dc19a48b6099" LastKnownName="Prendre Artefact" />
+            <elementDefinition Id="9b213289-51ed-4a34-89a7-40bcd605165b" />
+          </extend>
+          <extend Id="e46315f2-2a26-42dc-be7a-5abfd4d94e15">
+            <useCaseMoniker Id="fadc18b0-5455-4b41-8fbd-081874b9c15e" LastKnownName="Déposer Artefact" />
+            <elementDefinition Id="fb2a9d63-9ff2-416e-803a-9fe81a312af6" />
+          </extend>
+          <extend Id="641da692-ed0e-4648-b6c0-a1db168b8665">
+            <useCaseMoniker Id="da8d3c99-1903-453a-9870-57e1950dc932" LastKnownName="Recharger  son énergie" />
+            <elementDefinition Id="b79c5919-960f-440a-9b64-7eef17d682cc" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="6ddff81a-a306-497e-aa95-ca00e0dbd18f">
+            <useCaseMoniker Id="81a99d4d-dbde-4c02-a681-ce7f09e6edf8" LastKnownName="Lancer dés" />
+            <elementDefinition Id="cbc9073b-423a-4a3c-82a1-9056f2b82289" />
+          </include>
+          <include Id="508ac165-cfa7-4f38-aafd-92f9490aa9a9">
+            <useCaseMoniker Id="1d335836-aa10-43f9-a9c2-f7a91eb6ea7e" LastKnownName="Sélectionner le nombre de dés pour le déplacement" />
+            <elementDefinition Id="6edad7f9-7015-4fd2-bcaa-4f55991bd4ec" />
+          </include>
+          <include Id="36030225-3375-4dd7-a1ae-d5a2e742d2c2">
+            <useCaseMoniker Id="b550ecd7-9a8d-4565-a2f1-d8b9b6569b80" LastKnownName="Choisir la case d'arrivée" />
+            <elementDefinition Id="6548fd70-b806-44e4-937d-1d6ce051017e" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="96d44577-ad17-42be-a767-ac12b14777d2" name="Tirer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cdbf09b2-d7a2-424e-90e2-9daf8f654c9f" />
+        <additions>
+          <include Id="0f53391b-dd21-4fcb-b433-91a2f48fcca6">
+            <useCaseMoniker Id="2679fd5c-3263-48c8-a8fa-bef3f81632d6" LastKnownName="Viser une case" />
+            <elementDefinition Id="f35bf6cf-3701-4446-b139-67c1908ff2c9" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="81a99d4d-dbde-4c02-a681-ce7f09e6edf8" name="Lancer dés" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="482578f4-4c7d-4474-a6af-5c43720e405e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1d335836-aa10-43f9-a9c2-f7a91eb6ea7e" name="Sélectionner le nombre de dés pour le déplacement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="891cc249-dc0b-4352-80af-63f6f2a802a5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b550ecd7-9a8d-4565-a2f1-d8b9b6569b80" name="Choisir la case d'arrivée" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4006b1f6-c7e6-4e5b-9ebd-61e0f0376079" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2679fd5c-3263-48c8-a8fa-bef3f81632d6" name="Viser une case" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ab6dddb1-938e-487a-88d6-1f49e79cf638" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2e1f3444-a431-4e75-a880-dc19a48b6099" name="Prendre Artefact" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d02a18d5-e35b-48f3-aefb-f1e648130702" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="da8d3c99-1903-453a-9870-57e1950dc932" name="Recharger  son énergie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e83fafb-e322-45c0-8ad8-1d3f276ed145" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fadc18b0-5455-4b41-8fbd-081874b9c15e" name="Déposer Artefact" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7023ded8-3f4f-4c33-892e-980f0856a141" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="41a484d4-3169-4389-8c6d-a7578e8d7fe1" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4b37d7c1-7279-44ec-9168-d9bf74b15d4e">
+        <profileInstance Id="996824df-6951-4615-b8ad-a886903bfa61" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8c77322b-9555-4aa4-88fb-398adec6a7d0">
+        <profileInstance Id="66a35892-56d2-422c-a86a-275d5bace795" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e96b8757-6dae-4601-8003-4b530b01c226">
+        <profileInstance Id="1e82d5b1-bb6d-4ebe-96bf-fca55dd97029" name="CSharpProfile">
+          <elementDefinition Id="7110254b-55b4-47f0-8883-1829a9c03c52" />
+        </profileInstance>
+        <elementDefinition Id="62e31fd0-6bbc-4945-8bad-e0021ff8a9d7" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e9dcb601-3596-4b7e-9dd0-4f1698ddd2b5">
+        <profileInstance Id="589ca9fc-c586-4124-b9a1-54e4e8c334ca" name="TextTemplateBindings">
+          <elementDefinition Id="cb05c709-5b22-4534-b1d0-ce0e2ce3a74e" />
+        </profileInstance>
+        <elementDefinition Id="ad5f4e12-a9e8-4268-9465-ea0f1a2f3c2e" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

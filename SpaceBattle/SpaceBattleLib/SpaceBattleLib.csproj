@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0779725F-D76B-4987-893C-2F3FD09AD490}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpaceBattleLib</RootNamespace>
+    <AssemblyName>SpaceBattleLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GeneratedCode\Controleur\Command\Command.h" />
+    <Content Include="GeneratedCode\Controleur\Command\CreerPartie.h" />
+    <Content Include="GeneratedCode\Controleur\Command\DeplacerVaisseau.h" />
+    <Content Include="GeneratedCode\Controleur\Command\LancerDes.h" />
+    <Content Include="GeneratedCode\Controleur\Command\Tirer.h" />
+    <Content Include="GeneratedCode\Controleur\Instruments\Clavier.h" />
+    <Content Include="GeneratedCode\Controleur\Instruments\Instruments.h" />
+    <Content Include="GeneratedCode\Controleur\Instruments\Main.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\Battlecruiser.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\CapsuleDeSurvie.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\Case.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\CaseArtefact.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\CaseAsteroide.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\CaseEnergie.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\CaseStationOrbitale.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\CaseVide.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\Coordonnee.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\Couleur.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\DeImpl.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\FabriqueCase.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\FabriqueConcreteVaisseau.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\JoueurImpl.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\MonteurPartie.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\MonteurPartie2Joueurs.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\MonteurPartie3Joueurs.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\MonteurPartie4Joueurs.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\PartieImpl.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\PlateauImpl.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\Position.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\Vaisseau-mere.h" />
+    <Content Include="GeneratedCode\Modele\Implementation\VaisseauConcret.h" />
+    <Content Include="GeneratedCode\Modele\Interfaces\De.h" />
+    <Content Include="GeneratedCode\Modele\Interfaces\FabriqueAbstraiteVaisseau.h" />
+    <Content Include="GeneratedCode\Modele\Interfaces\Joueur.h" />
+    <Content Include="GeneratedCode\Modele\Interfaces\Partie.h" />
+    <Content Include="GeneratedCode\Modele\Interfaces\Plateau.h" />
+    <Content Include="GeneratedCode\Modele\Interfaces\Vaisseau.h" />
+    <Content Include="GeneratedCode\Observer.h" />
+    <Content Include="GeneratedCode\Vue\Implementation\VueDesImpl.h" />
+    <Content Include="GeneratedCode\Vue\Implementation\VueFabriqueImpl.h" />
+    <Content Include="GeneratedCode\Vue\Implementation\VueGestionTirImpl.h" />
+    <Content Include="GeneratedCode\Vue\Implementation\VuePlateauImpl.h" />
+    <Content Include="GeneratedCode\Vue\Implementation\VueVaisseauImpl.h" />
+    <Content Include="GeneratedCode\Vue\Interfaces\VueDes.h" />
+    <Content Include="GeneratedCode\Vue\Interfaces\VueFabrique.h" />
+    <Content Include="GeneratedCode\Vue\Interfaces\VueGestionTir.h" />
+    <Content Include="GeneratedCode\Vue\Interfaces\VuePlateau.h" />
+    <Content Include="GeneratedCode\Vue\Interfaces\VueVaisseau.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

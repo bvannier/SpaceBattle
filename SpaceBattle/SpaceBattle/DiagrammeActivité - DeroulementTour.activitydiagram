@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="bf0ac593-5a8f-4c58-b891-ed25302f7125" name="DeroulementTour" linkedPackageId="0b519ced-f4f6-4112-a33a-272ec1a007f9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="66a2c594-5bd3-4c69-bb60-a3705e02ace0">
+      <elementDefinition Id="329af373-849e-436e-9827-03ce4f011356" />
+      <body>Dans le cas où le joueur joue avec deux dés, ce dernier a le choix entre aditionner le résultat des deux dés ou bien choisir l'un des deux résultats pour avancer</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="b7b30cc5-5f4f-4fdd-8ddb-8cc5a42d1009" LastKnownName="Sélection d'un ou deux dés" />
+      </annotatedElements>
+    </comment>
+    <comment Id="690393fd-09ad-405b-b553-9b78ff26c783">
+      <elementDefinition Id="a8736754-8983-4d9d-a456-d15bcba3650a" />
+      <body>Fin du tour</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="ceb60fdd-a4ac-439b-a4ea-c92f7f30c1c7" LastKnownName="ActivityFinal2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="184937ce-c77e-4669-89f3-713283e1970d">
+      <elementDefinition Id="8582d69e-9964-4a48-a054-144299b62399" />
+      <body>Victoire de la flotte ayant amené l'Artefact dans sa Station Orbitale !</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="8b2f2340-d75c-470f-a99c-99e20c5b620d" LastKnownName="ActivityFinal3" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d32caa35-7020-4e5e-9c82-7b23e30ee152">
+      <elementDefinition Id="8aae2469-ef07-4ed4-b9d6-b1333db83d4f" />
+      <body>Initialement le canon d'un vaisseau n'est pas chargé d'où son incapacité à tirer.</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="c75cca84-7565-438c-8283-52c254ea5ad5" LastKnownName="Changer vaisseau en vaisseau-mère" />
+      </annotatedElements>
+    </comment>
+    <comment Id="7648a279-75c0-4a5b-b649-58af96687653">
+      <elementDefinition Id="cd64fbaa-8086-4157-a486-7c6234f4835e" />
+      <body>Voir Diagramme d'états-transitions GestionTir</body>
+      <annotatedElements>
+        <objectNodeMoniker Id="9dd2f5fd-0636-4e8f-8fab-2bcdb32e2b34" LastKnownName="GestionTir" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="8f31eb4b-f8db-4d50-a5d8-f2eb3b455f29" name="DeroulementTour" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="30a88db5-e993-47ca-94ea-7feca40e7911" />
+        <nodes>
+          <initialNode Id="1468e322-2aa9-4098-a1c3-df51bc3ddf8e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b666f0d0-927d-4f83-98fb-a14554eefbc3" />
+            <flowNodeTargets>
+              <controlFlow Id="8a56cb84-9187-4c9d-abeb-27299e2381cc" isLeaf="false">
+                <opaqueActionMoniker Id="7a821e3a-7c55-42cf-b746-1c92e11d1a3f" LastKnownName="Lancer Dé(s)" />
+                <elementDefinition Id="4b326bfb-36ec-4b8d-bd17-b89a7c5cd306" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="7a821e3a-7c55-42cf-b746-1c92e11d1a3f" name="Lancer Dé(s)" isLeaf="false">
+            <elementDefinition Id="f2128423-98ae-47a4-a847-39918ef6f0ed" />
+            <flowNodeTargets>
+              <controlFlow Id="1e086543-e455-4033-9bc8-b27572f5c86b" isLeaf="false">
+                <opaqueActionMoniker Id="b7b30cc5-5f4f-4fdd-8ddb-8cc5a42d1009" LastKnownName="Sélection d'un ou deux dés" />
+                <elementDefinition Id="c9c85b66-be76-498d-9228-5b22546bbddf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b7b30cc5-5f4f-4fdd-8ddb-8cc5a42d1009" name="Sélection d'un ou deux dés" isLeaf="false">
+            <elementDefinition Id="84e5ab3c-10c4-48aa-9ee9-a04604885d1b" />
+            <flowNodeTargets>
+              <controlFlow Id="07a4f4c9-502b-4898-a9a4-aed88edde0ca" isLeaf="false">
+                <opaqueActionMoniker Id="3c2abad5-d04c-4cac-aa38-60bb95b85956" LastKnownName="Choisir case" />
+                <elementDefinition Id="13863e6d-731a-410c-8d99-14c760a322d3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ba255741-a870-4b9d-81b1-ebab3d63c68d" name="Se déplacer" isLeaf="false">
+            <elementDefinition Id="9448732a-af8c-495f-9ccd-c5a9361df7e0" />
+            <flowNodeTargets>
+              <controlFlow Id="c0c7141f-5aab-45c0-b36e-025e2a969e59" guard="case artefact" isLeaf="false">
+                <decisionNodeMoniker Id="b56d2361-0c6e-475d-b14b-a04b0eb70d94" LastKnownName="Decision2" />
+                <elementDefinition Id="c9a8bc80-6fce-4671-bc81-e684c2e363e4" />
+              </controlFlow>
+              <controlFlow Id="9090e90b-914f-459d-a651-73a1a6ca87cd" guard="case Station Orbitale" isLeaf="false">
+                <decisionNodeMoniker Id="5bd27d90-fde0-43dd-b42d-ace4e9826724" LastKnownName="Decision3" />
+                <elementDefinition Id="b3eb4fea-a7df-40fd-bdab-f1d007e45d6b" />
+              </controlFlow>
+              <controlFlow Id="6c8ddca7-910c-4115-8ab6-71c4fabd5fa0" guard="case Energie" isLeaf="false">
+                <opaqueActionMoniker Id="518c8913-9a56-4523-8806-fa903f3f0f48" LastKnownName="Charger vaisseau en énergie" />
+                <elementDefinition Id="2e83878c-34cc-4b1d-9303-d4ef885b72d4" />
+              </controlFlow>
+              <controlFlow Id="3ee4e2c0-f64c-4cb6-b88c-12f34aeb59e6" guard="case vide" isLeaf="false">
+                <decisionNodeMoniker Id="024d261e-a6da-4d7d-9ec5-db3200e82d96" LastKnownName="Decision13" />
+                <elementDefinition Id="2758d730-cbf0-4fa7-9ced-ee302eb46ea7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3c2abad5-d04c-4cac-aa38-60bb95b85956" name="Choisir case" isLeaf="false">
+            <elementDefinition Id="d546065c-20ae-4202-bd53-f0754aac736f" />
+            <flowNodeTargets>
+              <controlFlow Id="f27c95a9-0d89-4dc6-8d85-1c11fb14d431" isLeaf="false">
+                <opaqueActionMoniker Id="ba255741-a870-4b9d-81b1-ebab3d63c68d" LastKnownName="Se déplacer" />
+                <elementDefinition Id="60f91850-d7d6-4f5e-b9b7-ae4251f5af91" />
+              </controlFlow>
+              <controlFlow Id="fc884ebe-6ecd-4177-8ab8-fa5a867f981b" guard="case invalide" isLeaf="false">
+                <opaqueActionMoniker Id="3c2abad5-d04c-4cac-aa38-60bb95b85956" LastKnownName="Choisir case" />
+                <elementDefinition Id="9690f938-68df-4fd0-9601-e5b80c9dcd2b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1cb889c6-3b07-4460-84b3-178b20a671cd" name="Prendre l'Artefact" isLeaf="false">
+            <elementDefinition Id="44b04b95-6031-4492-83e9-d672d3ce00e7" />
+            <flowNodeTargets>
+              <controlFlow Id="78a69deb-ac72-4a60-87c0-e7e5c66329c2" isLeaf="false">
+                <mergeNodeMoniker Id="cf0709fa-fec3-4c66-af96-43f3fc8fe7ab" LastKnownName="Merge1" />
+                <elementDefinition Id="117c9db0-891a-4011-918c-100af499c175" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="47038e31-8a07-4223-a55b-f2cb9344581b" name="Aucune action relative à la case Artefact" isLeaf="false">
+            <elementDefinition Id="ecb05cf0-a68d-4199-b954-cd5db5d733ac" />
+            <flowNodeTargets>
+              <controlFlow Id="2950e8ab-713c-4c86-ab2b-120019b790f1" isLeaf="false">
+                <mergeNodeMoniker Id="cf0709fa-fec3-4c66-af96-43f3fc8fe7ab" LastKnownName="Merge1" />
+                <elementDefinition Id="cc414f58-755f-4af5-ba83-24f77c64b849" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="1e71823c-88c4-4ce1-b85f-4530afc1f480" name="Decision1" isLeaf="false">
+            <elementDefinition Id="80e35387-77e4-447b-8e32-832e9fc765b9" />
+            <flowNodeTargets>
+              <controlFlow Id="689e827b-9740-46ec-9e2c-e36ea986b638" guard="else" isLeaf="false">
+                <mergeNodeMoniker Id="e1c8f32b-40d9-4f7c-8ef2-ab0b8a9c0d7b" LastKnownName="Merge2" />
+                <elementDefinition Id="c6f5ad6e-0f4f-47d2-b689-cfcabd3d52c0" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="91ca77d3-4244-4ac6-a304-f5318d24fc92" guard="volonté de tirer" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="9dd2f5fd-0636-4e8f-8fab-2bcdb32e2b34" LastKnownName="GestionTir" />
+                <elementDefinition Id="f67fb6a0-692a-4239-ae7d-88073b88369b" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <activityFinalNode Id="ceb60fdd-a4ac-439b-a4ea-c92f7f30c1c7" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="f237d432-413a-414e-ad45-69273318764a" />
+          </activityFinalNode>
+          <mergeNode Id="cf0709fa-fec3-4c66-af96-43f3fc8fe7ab" name="Merge1" isLeaf="false">
+            <elementDefinition Id="5132d714-01d7-46b5-bf0e-724998322612" />
+            <flowNodeTargets>
+              <controlFlow Id="2ade55ac-548d-4aad-a0b0-761c2bf272a7" isLeaf="false">
+                <decisionNodeMoniker Id="1e71823c-88c4-4ce1-b85f-4530afc1f480" LastKnownName="Decision1" />
+                <elementDefinition Id="757a93ad-19ec-4e49-8098-99044b2af8b6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <objectNode Id="9dd2f5fd-0636-4e8f-8fab-2bcdb32e2b34" name="GestionTir" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="10e45ad7-bb55-4859-92ef-619471460376" />
+            <objectFlowTargets>
+              <objectFlow Id="cda2f978-95fe-47cc-9889-2be725b57059" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <mergeNodeMoniker Id="e1c8f32b-40d9-4f7c-8ef2-ab0b8a9c0d7b" LastKnownName="Merge2" />
+                <elementDefinition Id="4becc1ad-41c3-4fc9-b6e5-140a44ebc852" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="605a7570-5bd7-4dde-b684-6e5ef5fc007e" name="2147483647" value="2147483647">
+                <elementDefinition Id="3b084816-ce3d-4b7a-8ef6-bc4f7b4dfec1" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="b56d2361-0c6e-475d-b14b-a04b0eb70d94" name="Decision2" isLeaf="false">
+            <elementDefinition Id="74093ca6-24ce-4d5b-b305-878df2d0e52d" />
+            <flowNodeTargets>
+              <controlFlow Id="a5c294d6-e497-4742-ac06-cdb406a1178a" guard="capsule de survie ou Artefact déjà chargé" isLeaf="false">
+                <opaqueActionMoniker Id="47038e31-8a07-4223-a55b-f2cb9344581b" LastKnownName="Aucune action relative à la case Artefact" />
+                <elementDefinition Id="edd05bfe-4395-467b-b19e-531f4a7691d9" />
+              </controlFlow>
+              <controlFlow Id="e2042248-c3af-4d91-82c7-2d143ffd8bfd" isLeaf="false">
+                <opaqueActionMoniker Id="1cb889c6-3b07-4460-84b3-178b20a671cd" LastKnownName="Prendre l'Artefact" />
+                <elementDefinition Id="693e4c91-79a8-452b-97b7-47e37f9389fe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="518c8913-9a56-4523-8806-fa903f3f0f48" name="Charger vaisseau en énergie" isLeaf="false">
+            <elementDefinition Id="5cfe2739-9ab2-4591-9d4c-7ef87fa4886a" />
+            <flowNodeTargets>
+              <controlFlow Id="9312d119-3afc-4e2c-a651-f5e4a9ef0ab0" isLeaf="false">
+                <decisionNodeMoniker Id="f1f44e52-cd07-4efe-8d38-b24c027fead1" LastKnownName="Decision11" />
+                <elementDefinition Id="8e7c62c7-cfd4-4af8-8296-38c706202011" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="f1f44e52-cd07-4efe-8d38-b24c027fead1" name="Decision11" isLeaf="false">
+            <elementDefinition Id="30f5d543-fd3e-461e-8991-623f4a3abffe" />
+            <flowNodeTargets>
+              <controlFlow Id="cd8e302c-372d-464c-93e9-ed68c48614e7" guard="else" isLeaf="false">
+                <mergeNodeMoniker Id="79fdafe2-5915-47ff-92dd-96033655c420" LastKnownName="Merge3" />
+                <elementDefinition Id="4a828516-c6e9-498a-b384-80df013f67c9" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="0faf38ec-f0dc-490a-b94e-b0b280afd3bb" guard="volonté de tirer" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="23fa18cf-24fb-4e81-be05-b50f96e051eb" LastKnownName="GestionTir" />
+                <elementDefinition Id="a45f0a8d-2ed2-4b35-8515-d6b8f63d13a5" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <objectNode Id="23fa18cf-24fb-4e81-be05-b50f96e051eb" name="GestionTir" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="e29a5e48-5137-4f68-8551-3d666414e39c" />
+            <objectFlowTargets>
+              <objectFlow Id="882d697c-6fe0-490e-a9c4-2641d34efd18" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <mergeNodeMoniker Id="79fdafe2-5915-47ff-92dd-96033655c420" LastKnownName="Merge3" />
+                <elementDefinition Id="2867bf2d-42ee-452f-ad98-a4504cc2da29" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="e1097bce-b912-4369-a955-f65dd1fba586" name="2147483647" value="2147483647">
+                <elementDefinition Id="16211bb9-1c52-40db-8101-61f5b5bfc401" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="e4432532-4f53-4c43-8b9e-eb1c873d2c1b" name="Changer joueur" isLeaf="false">
+            <elementDefinition Id="84a979bf-de5a-4bfe-b184-572b3be6d026" />
+            <flowNodeTargets>
+              <controlFlow Id="7485f080-e4bd-4696-8244-0c398f1ae767" isLeaf="false">
+                <activityFinalNodeMoniker Id="ceb60fdd-a4ac-439b-a4ea-c92f7f30c1c7" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="e57e6b8c-cae5-463d-8c21-f8f7212a6aa6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="e1c8f32b-40d9-4f7c-8ef2-ab0b8a9c0d7b" name="Merge2" isLeaf="false">
+            <elementDefinition Id="40452615-ec86-463b-bd89-c4119ee8fe3a" />
+            <flowNodeTargets>
+              <controlFlow Id="c3aff58f-de23-46d6-9a34-801047afa914" isLeaf="false">
+                <opaqueActionMoniker Id="e4432532-4f53-4c43-8b9e-eb1c873d2c1b" LastKnownName="Changer joueur" />
+                <elementDefinition Id="6734939b-d8c8-4c47-84a4-87641d959c7a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <mergeNode Id="79fdafe2-5915-47ff-92dd-96033655c420" name="Merge3" isLeaf="false">
+            <elementDefinition Id="58e022da-93ab-4ea3-9060-f7047280a147" />
+            <flowNodeTargets>
+              <controlFlow Id="c848abea-e15d-44bc-a78d-2339f5e839da" isLeaf="false">
+                <opaqueActionMoniker Id="e4432532-4f53-4c43-8b9e-eb1c873d2c1b" LastKnownName="Changer joueur" />
+                <elementDefinition Id="3c1879bd-db53-40e9-9779-162e94769f03" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="7ed6e35f-0f1c-4e24-82b7-8060792e3965" name="Déposer Artefact" isLeaf="false">
+            <elementDefinition Id="8055e77b-0440-4f8e-b6fb-08ff27562053" />
+            <flowNodeTargets>
+              <controlFlow Id="515503eb-ef6b-4ccf-8681-ff9be29576a3" guard="trois Artefacts dans la Station Orbitale" isLeaf="false">
+                <activityFinalNodeMoniker Id="8b2f2340-d75c-470f-a99c-99e20c5b620d" LastKnownName="ActivityFinal3" />
+                <elementDefinition Id="dddc8e49-8bf5-4316-8f35-f2e9e645f566" />
+              </controlFlow>
+              <controlFlow Id="b31c0cb4-ad0c-46c6-a60f-b209b6441cf0" isLeaf="false">
+                <mergeNodeMoniker Id="72f88fe2-6fb4-43bc-b15d-4064afb4b881" LastKnownName="Merge11" />
+                <elementDefinition Id="cbcdded9-b032-45d2-8a6d-1deef10128f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c75cca84-7565-438c-8283-52c254ea5ad5" name="Changer vaisseau en vaisseau-mère" isLeaf="false">
+            <elementDefinition Id="94254752-9f8c-498e-9c38-b89d99cbd374" />
+            <flowNodeTargets>
+              <controlFlow Id="fe94d57a-47f6-4690-ab17-09af50c78aaf" isLeaf="false">
+                <mergeNodeMoniker Id="3027a2cd-7935-4afa-96db-bdeec33f9d4b" LastKnownName="Merge4" />
+                <elementDefinition Id="70599479-43e7-4d97-bfd5-2a1787922a3f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a43e731e-81b8-4dca-a16b-313780649f04" name="Aucune action relative à la Station Orbitale" isLeaf="false">
+            <elementDefinition Id="9599d56c-4e17-46c0-9dfe-91aa9883d592" />
+            <flowNodeTargets>
+              <controlFlow Id="65bcb80a-b9c2-4e2a-b2ca-9d7728a4827c" isLeaf="false">
+                <mergeNodeMoniker Id="72f88fe2-6fb4-43bc-b15d-4064afb4b881" LastKnownName="Merge11" />
+                <elementDefinition Id="16d8fa20-2cbe-42e2-bb26-53941c0675de" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="77f36009-b7e2-49ba-a839-ab7d0b296532" name="Decision12" isLeaf="false">
+            <elementDefinition Id="a3233223-9e41-4bb6-b12c-de574cb40564" />
+            <flowNodeTargets>
+              <controlFlow Id="7661272f-8ea6-4026-9d9f-42e5a698d4de" guard="else" isLeaf="false">
+                <mergeNodeMoniker Id="3027a2cd-7935-4afa-96db-bdeec33f9d4b" LastKnownName="Merge4" />
+                <elementDefinition Id="38a05441-f81d-40d7-b84d-7ce4c345ca16" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="73e8fb41-b42c-4276-806b-4a3b9fb6f79c" guard="volonté de tirer" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="0b481580-6998-4ef7-87d8-f53a63fe2412" LastKnownName="GestionTir" />
+                <elementDefinition Id="4c0a59a3-8bab-42f6-8318-b5a75fc5f5b0" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <activityFinalNode Id="8b2f2340-d75c-470f-a99c-99e20c5b620d" name="ActivityFinal3" isLeaf="false">
+            <elementDefinition Id="7a0d8591-5570-4329-a4e5-101a6f1b42f1" />
+          </activityFinalNode>
+          <objectNode Id="0b481580-6998-4ef7-87d8-f53a63fe2412" name="GestionTir" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="988cb30e-fb3c-4b6a-81fa-11086d70c0c6" />
+            <objectFlowTargets>
+              <objectFlow Id="6dc2e040-6b4c-42e5-8436-cd2d6693cf82" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <mergeNodeMoniker Id="3027a2cd-7935-4afa-96db-bdeec33f9d4b" LastKnownName="Merge4" />
+                <elementDefinition Id="22c3ea52-637c-44f2-b395-b31ba2ab00d8" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="586995a6-5c82-4f71-8f6d-f5e08e480b8d" name="2147483647" value="2147483647">
+                <elementDefinition Id="1a9dc707-61da-44da-b611-2fa8ff74f7f2" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <mergeNode Id="72f88fe2-6fb4-43bc-b15d-4064afb4b881" name="Merge11" isLeaf="false">
+            <elementDefinition Id="56f42e9c-fe76-45ca-a0d3-e542940b542a" />
+            <flowNodeTargets>
+              <controlFlow Id="0b62e634-1e8f-4323-85f8-7e3df4320206" isLeaf="false">
+                <decisionNodeMoniker Id="77f36009-b7e2-49ba-a839-ab7d0b296532" LastKnownName="Decision12" />
+                <elementDefinition Id="4cb3bd38-5b1b-494c-b7c4-f2da785e8e50" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode Id="5bd27d90-fde0-43dd-b42d-ace4e9826724" name="Decision3" isLeaf="false">
+            <elementDefinition Id="525d981f-fbdb-46e6-bbcb-965ecb151efa" />
+            <flowNodeTargets>
+              <controlFlow Id="f002b635-04a1-4346-aa0e-f29e2ef42d2d" guard="vaisseau est une capsule de survie" isLeaf="false">
+                <opaqueActionMoniker Id="c75cca84-7565-438c-8283-52c254ea5ad5" LastKnownName="Changer vaisseau en vaisseau-mère" />
+                <elementDefinition Id="d3ab942e-5901-499e-a6ea-d0d22b4e5824" />
+              </controlFlow>
+              <controlFlow Id="57b39b2d-4f51-46e6-9374-82b9539ba07b" guard="else" isLeaf="false">
+                <opaqueActionMoniker Id="a43e731e-81b8-4dca-a16b-313780649f04" LastKnownName="Aucune action relative à la Station Orbitale" />
+                <elementDefinition Id="f55b6e38-8f2d-4bb5-8408-ad6bf9ae2702" />
+              </controlFlow>
+              <controlFlow Id="865582ed-5b68-4b19-aec3-df9531cd9149" guard="vaisseau avec Artefact" isLeaf="false">
+                <opaqueActionMoniker Id="7ed6e35f-0f1c-4e24-82b7-8060792e3965" LastKnownName="Déposer Artefact" />
+                <elementDefinition Id="a769ba1e-22bc-4ef7-bf35-e6b9ba2f9f60" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode Id="3027a2cd-7935-4afa-96db-bdeec33f9d4b" name="Merge4" isLeaf="false">
+            <elementDefinition Id="cb9c583a-679e-41fa-99ab-07c4dbbc04bf" />
+            <flowNodeTargets>
+              <controlFlow Id="3b540ab0-937e-44a4-8258-ecf974f3d310" isLeaf="false">
+                <opaqueActionMoniker Id="e4432532-4f53-4c43-8b9e-eb1c873d2c1b" LastKnownName="Changer joueur" />
+                <elementDefinition Id="3ac7a8ab-eabf-4698-875c-d477d4c81a92" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode Id="024d261e-a6da-4d7d-9ec5-db3200e82d96" name="Decision13" isLeaf="false">
+            <elementDefinition Id="7d4d4ffb-38aa-4f0e-9125-9d163f98b475" />
+            <flowNodeTargets>
+              <controlFlow Id="51fdf2a5-7fbf-4ab5-ad59-aa519cd83e45" guard="else" isLeaf="false">
+                <mergeNodeMoniker Id="853dbc12-e0ba-4349-8808-4d0886a90a2d" LastKnownName="Merge5" />
+                <elementDefinition Id="2a83a256-5e2a-4f80-a8f3-32acca477540" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="d36affa3-13c9-40d8-8d94-1ea95ab67729" guard="volonté de tirer" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="c2a40f00-c4db-4219-9c93-b43795fb15f3" LastKnownName="GestionTir" />
+                <elementDefinition Id="b25a5c19-cdd8-4e7a-8d7c-4b4b8f0b7c5d" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <objectNode Id="c2a40f00-c4db-4219-9c93-b43795fb15f3" name="GestionTir" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="6ad8d771-82c4-4440-b410-cefd9d42b175" />
+            <objectFlowTargets>
+              <objectFlow Id="ca381645-f5c9-4907-91ce-90a5ad032ffd" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <mergeNodeMoniker Id="853dbc12-e0ba-4349-8808-4d0886a90a2d" LastKnownName="Merge5" />
+                <elementDefinition Id="3478ce4a-10e3-461f-a8fe-7f078b5440fa" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="c338b9b6-066f-410d-ac84-a7b622db6e84" name="2147483647" value="2147483647">
+                <elementDefinition Id="8503c667-fb72-4a23-8b90-a2fec41f8acc" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <mergeNode Id="853dbc12-e0ba-4349-8808-4d0886a90a2d" name="Merge5" isLeaf="false">
+            <elementDefinition Id="579655f8-9ca3-4b8e-9078-192c36ad1712" />
+            <flowNodeTargets>
+              <controlFlow Id="8d619b13-3da9-4655-8a72-534f3ac56da9" isLeaf="false">
+                <opaqueActionMoniker Id="e4432532-4f53-4c43-8b9e-eb1c873d2c1b" LastKnownName="Changer joueur" />
+                <elementDefinition Id="8fa6223a-34e3-49db-a777-6043464d3cc0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="0b519ced-f4f6-4112-a33a-272ec1a007f9" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f5267990-ab41-4f62-bd40-fde6a20a15fa">
+        <profileInstance Id="90272e50-22d4-4e56-87c5-5e2ba6ce9faf" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="62999d69-fab9-4fee-b1a4-5a514d5e7541">
+        <profileInstance Id="2fcc5fe8-b471-4adf-9d56-47f68b959868" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

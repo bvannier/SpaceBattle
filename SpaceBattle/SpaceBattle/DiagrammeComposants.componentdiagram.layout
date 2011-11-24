@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="fa909449-956c-4338-aac7-fb7e9d023697" />
+  <nestedChildShapes>
+    <componentShape Id="0756a7b7-bf6a-419b-b7f8-a43fbaae8bd0" absoluteBounds="7.125, 1.125, 2.6062499999999993, 2.1291731522480646" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="db3a7e55-b710-456f-b6d5-0ac9868a0d52" LastKnownName="Wrapper C#" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="ec678764-d4a8-4b83-b307-9672aba7f016" absoluteBounds="6.052083333333333, 2.03125, 1.072916666666667, 0.15625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="0844513a-c7e0-4d5d-ba16-6b3da6db9bf0" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <componentUseShape Id="69947eb9-3216-4343-8f61-327263393de5" absoluteBounds="7.225, 1.662506485581398, 2.40625, 1.4916666666666665" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+          <partMoniker Id="b914c088-2115-4361-85eb-eadc00bff814" LastKnownName="Moteur du jeu C++" />
+        </componentUseShape>
+      </nestedChildShapes>
+    </componentShape>
+    <componentShape Id="311956d4-2e05-4081-bde0-9ea61893bb77" absoluteBounds="2.75, 1.125, 2.53125, 2.0645833333333328" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="75cbd611-5e1a-4a22-ad61-06f1e2edf0aa" LastKnownName="Interface graphique" />
+      <relativeChildShapes>
+        <requiredInterfaceShape Id="0c745620-22d5-4aaa-9ed2-fe3387aa168a" absoluteBounds="5.28125, 2.03125, 0.75, 0.15625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <requiredInterfaceMoniker Id="06be5d4d-2994-4afd-ab7a-6a41268caf19" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </requiredInterfaceShape>
+        <requiredInterfaceShape Id="addb8d97-57c2-4632-9891-2406868fe1b0" absoluteBounds="3.8125, 3.1895833333333328, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <requiredInterfaceMoniker Id="dd3ed81e-b610-4799-ac66-957c21f0df60" LastKnownName="Port2" />
+          <relativeChildShapes />
+        </requiredInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="78a84fb2-7965-48c3-a21d-232e916f5d82" absoluteBounds="2.875, 4, 1.989583333333333, 1.3354166666666671" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="1e11f9e9-6b95-4003-8a5a-7dafbf660ef5" LastKnownName="WPF" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="f6f33507-d45c-4590-8705-74ee556ae7c3" absoluteBounds="3.8125, 3.59375, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="a68ebb9a-ef7f-4eac-ba79-87896f1c43bc" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="fa4fad27-bb18-48c0-aaa6-a7e1ae968de2" name="CaseArtefact" linkedPackageId="00480418-d94b-4aa1-b242-19c5aa168b36" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="74c52009-be40-4770-86fe-f6f420e61a78" name="CaseArtefact" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="41ba786a-9112-4bbd-ab96-bca70a744d23" />
+        <nodes>
+          <initialNode Id="6afb1039-8730-4339-9eb0-83d601fff0d7" name="Initial11" isLeaf="false">
+            <elementDefinition Id="ab34f0ff-f47b-456f-993e-a71dd8679ba1" />
+            <flowNodeTargets>
+              <controlFlow Id="09e8bc10-d49c-4f3f-9967-b56c9aa50e8f" isLeaf="false">
+                <opaqueActionMoniker Id="f262e9df-2fdf-4789-abfd-9f26ceab767e" LastKnownName="Artefact A chargé" />
+                <elementDefinition Id="af5ea321-3eef-48ce-8bfb-ae67456fb7a2" />
+              </controlFlow>
+              <controlFlow Id="133559eb-2927-4233-8382-14eae24c3209" guard="capsule de survie ou artefact B déjà chargé" isLeaf="false">
+                <opaqueActionMoniker Id="18ccacef-7472-46ee-8a6c-d7937b4975e3" LastKnownName="Artefact A non chargé" />
+                <elementDefinition Id="d5a07a6e-e152-426d-bc87-1bf635210945" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="f262e9df-2fdf-4789-abfd-9f26ceab767e" name="Artefact A chargé" isLeaf="false">
+            <elementDefinition Id="c6676ee5-6fa8-4343-a3b0-5609eeb026bf" />
+            <flowNodeTargets>
+              <controlFlow Id="fea80fc6-a399-4ccd-8bd0-e7afc81eb5cd" isLeaf="false">
+                <activityFinalNodeMoniker Id="19729c43-26d4-4272-8b6f-1d4820241408" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="3251fe98-420a-44ad-ac0d-90c05f2b9dbe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="18ccacef-7472-46ee-8a6c-d7937b4975e3" name="Artefact A non chargé" isLeaf="false">
+            <elementDefinition Id="7f3eb287-f18b-47af-ba37-02d7cbddbe7b" />
+            <flowNodeTargets>
+              <controlFlow Id="79479cf4-ee51-405b-a4c4-f83c8caa0e1f" isLeaf="false">
+                <activityFinalNodeMoniker Id="19729c43-26d4-4272-8b6f-1d4820241408" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="65f64156-f845-412c-9054-fe546242069d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="19729c43-26d4-4272-8b6f-1d4820241408" name="ActivityFinal21" isLeaf="false">
+            <elementDefinition Id="968610a7-5688-41b0-a1ad-c43adfb9aab9" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="00480418-d94b-4aa1-b242-19c5aa168b36" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="38db5b37-85d3-4a40-934a-a06362722e5e">
+        <profileInstance Id="bb64590a-b639-4631-81ed-9062b354a914" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b9c676bf-07b1-4a72-b38c-1c5603f52456">
+        <profileInstance Id="9625d222-3cb0-4cc2-b190-084c6b06a818" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

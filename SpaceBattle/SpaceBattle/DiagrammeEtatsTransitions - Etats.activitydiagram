@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27b72205-7dbc-4cd3-83d1-aad3a56e1c8d" name="Activity1" linkedPackageId="255f0338-24db-45a5-9a93-79baed15533e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="7d51ce30-053a-4b57-a542-17dfcf2af980">
+      <elementDefinition Id="95d9a039-7027-48eb-bc1e-9111451f31eb" />
+      <body>Lancer les dés pour déterminer l'ordre des joueurs</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="9c8b7dd7-8915-4b69-a996-2188fca33b9d" LastKnownName="Etat « Lancer les Dés »" />
+      </annotatedElements>
+    </comment>
+    <comment Id="7a2cc13f-742a-40b3-8399-2357cc151a86">
+      <elementDefinition Id="0522ac07-a151-4a0f-ad8d-792e5429d351" />
+      <body>Lancer les dés au début d'un tour</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="c9222504-9f1a-4156-8367-6e59e6a0b4e5" LastKnownName="Etat  « Lancer les Dés (Tour) »" />
+      </annotatedElements>
+    </comment>
+    <comment Id="9c12f1e2-10af-4f42-9674-09ead25b5b39">
+      <elementDefinition Id="679dbdec-086c-49e0-8328-3d4fef812082" />
+      <body>Fin de la partie</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="4e9bb6ad-77f6-45d3-ab29-eeb914981340" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="20ce9aaf-7d8c-473d-ba62-6d8b04893b62" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="716cf8f4-6217-4294-a972-bd36ffbb3bfb" />
+        <nodes>
+          <initialNode Id="9516be27-e99a-4073-8dc5-e9e276b64a30" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c0c6320a-5c20-47f1-805e-948acccd4bdc" />
+            <flowNodeTargets>
+              <controlFlow Id="c2979c05-9e96-40b4-bbdf-af56d2c95da1" guard="lancer l'application" isLeaf="false">
+                <opaqueActionMoniker Id="31c52b44-686f-402a-865b-70e08a6709a1" LastKnownName="Etat Initial" />
+                <elementDefinition Id="5431a142-3ce5-463d-9e97-206913719197" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="31c52b44-686f-402a-865b-70e08a6709a1" name="Etat Initial" isLeaf="false">
+            <elementDefinition Id="7cfded41-4755-4453-a7be-69cad5d5229f" />
+            <flowNodeTargets>
+              <controlFlow Id="ab60f959-1610-4fec-83cb-22b340c05c82" guard="créer la partie" isLeaf="false">
+                <opaqueActionMoniker Id="6b5fc935-8e9c-4308-9321-4683a7abfe85" LastKnownName="Etat « Choix du nombre de joueurs »" />
+                <elementDefinition Id="2718d5d6-0356-4944-bb6f-752e3e0f3568" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6b5fc935-8e9c-4308-9321-4683a7abfe85" name="Etat « Choix du nombre de joueurs »" isLeaf="false">
+            <elementDefinition Id="7672681f-fde3-4ebf-be26-6b95a058230d" />
+            <flowNodeTargets>
+              <controlFlow Id="84eeb497-1a35-4a6c-a6f9-baf6b60ca2bd" guard="paramétrer la partie" isLeaf="false">
+                <opaqueActionMoniker Id="9c8b7dd7-8915-4b69-a996-2188fca33b9d" LastKnownName="Etat « Lancer les Dés »" />
+                <elementDefinition Id="42299c09-de63-418e-979c-58a8b9946b27" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9c8b7dd7-8915-4b69-a996-2188fca33b9d" name="Etat « Lancer les Dés »" isLeaf="false">
+            <elementDefinition Id="9fdfb53b-9596-4c4c-a35d-a4afca66c66b" />
+            <flowNodeTargets>
+              <controlFlow Id="d0f15d27-dd35-44f0-a9b6-7e7207df1013" guard="lancer dés" isLeaf="false">
+                <opaqueActionMoniker Id="c9222504-9f1a-4156-8367-6e59e6a0b4e5" LastKnownName="Etat  « Lancer les Dés (Tour) »" />
+                <elementDefinition Id="989bfb60-c495-4443-9aff-f9286c9814a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c9222504-9f1a-4156-8367-6e59e6a0b4e5" name="Etat  « Lancer les Dés (Tour) »" isLeaf="false">
+            <elementDefinition Id="83760326-4939-4e43-b7e8-023f2974abe5" />
+            <flowNodeTargets>
+              <controlFlow Id="bb92d9f2-5bb8-4c9d-a77d-f17e41f9f2fa" guard="lancer dés" isLeaf="false">
+                <opaqueActionMoniker Id="8b7cf0d1-b3da-4373-9fff-95730304acfe" LastKnownName="Etat « Déplacement »" />
+                <elementDefinition Id="57dc46ec-6199-4121-a2d9-0aa102a7d25f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8b7cf0d1-b3da-4373-9fff-95730304acfe" name="Etat « Déplacement »" isLeaf="false">
+            <elementDefinition Id="ce15b27d-75fe-4462-a576-4d19ee68b1e1" />
+            <flowNodeTargets>
+              <controlFlow Id="04b81f9f-0757-447b-8e36-af991f1debe5" guard="se déplacer" isLeaf="false">
+                <opaqueActionMoniker Id="c4d47ef7-04b5-4ab7-ae9d-b5a9d74534a7" LastKnownName="Etat  « Tir »" />
+                <elementDefinition Id="3cfd19b9-5b98-4264-a839-b517c3bd2185" />
+              </controlFlow>
+              <controlFlow Id="d62bbf55-65fe-452c-b374-c83250b040da" guard="Trois artefacts" isLeaf="false">
+                <opaqueActionMoniker Id="25445c23-5d09-41b8-891e-c1d11c42a429" LastKnownName="Etat Final" />
+                <elementDefinition Id="27943e39-c714-432f-84b7-6b9130b81d24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c4d47ef7-04b5-4ab7-ae9d-b5a9d74534a7" name="Etat  « Tir »" isLeaf="false">
+            <elementDefinition Id="2a78ff74-09b7-44bf-bfcf-999bd4017453" />
+            <flowNodeTargets>
+              <controlFlow Id="8fe10399-199b-49b0-b423-0ff5b004f2e4" guard="fin tour" isLeaf="false">
+                <opaqueActionMoniker Id="c9222504-9f1a-4156-8367-6e59e6a0b4e5" LastKnownName="Etat  « Lancer les Dés (Tour) »" />
+                <elementDefinition Id="bf01a44d-a008-483e-9e69-9df5e60eeb2b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="25445c23-5d09-41b8-891e-c1d11c42a429" name="Etat Final" isLeaf="false">
+            <elementDefinition Id="18149987-f305-4f4c-902c-cb7779111c40" />
+            <flowNodeTargets>
+              <controlFlow Id="2d9828db-0812-4d3e-81ec-b0ad31d5c9fd" isLeaf="false">
+                <activityFinalNodeMoniker Id="4e9bb6ad-77f6-45d3-ab29-eeb914981340" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="1cfd9e56-53dd-4ff7-bf3c-e0cbe021e3d0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="4e9bb6ad-77f6-45d3-ab29-eeb914981340" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="fcb36b36-de1c-4bf9-90e7-af46ccdfcc96" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="255f0338-24db-45a5-9a93-79baed15533e" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c76c3a2b-d21f-48e6-bb40-d5ec9a2c76bb">
+        <profileInstance Id="f9f46a57-491d-470f-a475-9d2a5ffd07e8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c53f3f09-1eb3-4d9f-84fc-b66469016628">
+        <profileInstance Id="75a78575-754e-4087-9653-f79d90bb359b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

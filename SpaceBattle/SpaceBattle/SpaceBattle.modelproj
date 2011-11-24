@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3cda3b4d-ea49-46b2-96b8-753fb81114b4}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>SpaceBattle</Name>
+    <RootNamespace>SpaceBattle</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="DiagrammeCasUtilisation - Abstrait.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - Abstrait.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeCasUtilisation - Abstrait.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeComposants.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - CaseArtefact.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - CaseArtefact.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeEtatsTransitions - CaseArtefact.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - CaseEnergie.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - CaseEnergie.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeEtatsTransitions - CaseEnergie.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - CaseStationOrbitale.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - CaseStationOrbitale.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeEtatsTransitions - CaseStationOrbitale.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeActivité - DeroulementTour.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeActivité - DeroulementTour.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeActivité - DeroulementTour.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - GestionTir.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - GestionTir.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeEtatsTransitions - GestionTir.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - GestionTour.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - GestionTour.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeCasUtilisation - GestionTour.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - LancementJeu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - LancementJeu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeCasUtilisation - LancementJeu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0020.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2133.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpaceBattle.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpaceBattle.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SpaceBattle.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - Etats.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeEtatsTransitions - Etats.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeEtatsTransitions - Etats.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeSéquence - InitialisationPartie.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeSéquence - InitialisationPartie.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeSéquence - InitialisationPartie.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeSéquence - Déplacement.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeSéquence - Déplacement.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeSéquence - Déplacement.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeSéquence - CasesArrivée.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeSéquence - CasesArrivée.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeSéquence - CasesArrivée.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeSéquence - Tir.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeSéquence - Tir.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeSéquence - Tir.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - CasUtilisationGénérale.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiagrammeCasUtilisation - CasUtilisationGénérale.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiagrammeCasUtilisation - CasUtilisationGénérale.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="SpaceBattle-Modele.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpaceBattle-Modele.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SpaceBattle-Modele.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SpaceBattle-Vue.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpaceBattle-Vue.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SpaceBattle-Vue.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SpaceBattle-Controleur.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpaceBattle-Controleur.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SpaceBattle-Controleur.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\SpaceBattle.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

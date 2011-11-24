@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="fc2a29c0-b42e-46a2-8993-8e57b3b43dfc" name="CaseStationOrbitale" linkedPackageId="8f0a90b3-abb6-4cda-9f8d-ef4ae45ede8a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="57d2d169-df29-4cd7-9d73-75351e19c3bf">
+      <elementDefinition Id="e6ff514b-d45e-4339-919e-517f6d311ff2" />
+      <body>Victoire de la flotte ayant amené l'Artefact dans sa Station Orbitale !</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="9f326c1a-675b-4b7e-9437-8c7a178f6a59" LastKnownName="ActivityFinal31" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="fb48ef8c-0000-475e-9cca-223e5d4bb029" name="CaseStationOrbitale" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="183cd122-8945-45c5-b175-7e99b44ecaaa" />
+        <nodes>
+          <initialNode Id="abc2ffcc-dce8-4d10-8fab-48a8914496e1" name="Initial11" isLeaf="false">
+            <elementDefinition Id="ee2f07fe-aada-4421-b079-b5764e332355" />
+            <flowNodeTargets>
+              <controlFlow Id="23b74468-c035-4c8e-93f7-8a881191b6ff" guard="vaisseau avec Artefact" isLeaf="false">
+                <opaqueActionMoniker Id="3d639db9-dc78-4805-bd51-e5d466bd675f" LastKnownName="Artefact déposé" />
+                <elementDefinition Id="0f597185-31be-4ed3-8c96-57908457db0f" />
+              </controlFlow>
+              <controlFlow Id="a57ac725-0630-4c57-a1d4-7997e5e916fa" guard="vaisseau est une capsule de survie" isLeaf="false">
+                <opaqueActionMoniker Id="b1288990-bfb4-4323-8386-7fd1dcef6d5e" LastKnownName="Le vaisseau est un vaisseau mère" />
+                <elementDefinition Id="60014a81-01b2-45b8-852c-8a85426e77fc" />
+              </controlFlow>
+              <controlFlow Id="8e6209c4-20b1-4e6f-b533-928a5ba93c71" guard="else" isLeaf="false">
+                <activityFinalNodeMoniker Id="9ecd8af0-8af4-420f-8e21-2545197b23fb" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="d8ff7201-bcd6-45b0-9015-532ff528706e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="3d639db9-dc78-4805-bd51-e5d466bd675f" name="Artefact déposé" isLeaf="false">
+            <elementDefinition Id="e51874b7-532b-46ba-b9b9-2fe675a16dc0" />
+            <flowNodeTargets>
+              <controlFlow Id="df0834fc-ce64-4b65-9db2-a5eb09354e71" guard="trois Artefacts dans la Station Orbitale" isLeaf="false">
+                <activityFinalNodeMoniker Id="9f326c1a-675b-4b7e-9437-8c7a178f6a59" LastKnownName="ActivityFinal31" />
+                <elementDefinition Id="e88054c8-887e-4519-b76e-9056a73cb740" />
+              </controlFlow>
+              <controlFlow Id="6aa3a610-265f-46bf-8725-6812453da08a" isLeaf="false">
+                <activityFinalNodeMoniker Id="9ecd8af0-8af4-420f-8e21-2545197b23fb" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="303e1851-5b22-46df-9cbb-b081b8371ae4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b1288990-bfb4-4323-8386-7fd1dcef6d5e" name="Le vaisseau est un vaisseau mère" isLeaf="false">
+            <elementDefinition Id="b1b9404b-7ce7-476b-832f-315057c45995" />
+            <flowNodeTargets>
+              <controlFlow Id="0a17d4b8-0bc3-4c13-8439-34f776b7b9b2" isLeaf="false">
+                <activityFinalNodeMoniker Id="9ecd8af0-8af4-420f-8e21-2545197b23fb" LastKnownName="ActivityFinal21" />
+                <elementDefinition Id="b1ca2ac7-b65f-4478-9cdd-1471ff6d76b6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="9ecd8af0-8af4-420f-8e21-2545197b23fb" name="ActivityFinal21" isLeaf="false">
+            <elementDefinition Id="76e494f3-e352-48f5-a15b-34ad97950e01" />
+          </activityFinalNode>
+          <activityFinalNode Id="9f326c1a-675b-4b7e-9437-8c7a178f6a59" name="ActivityFinal31" isLeaf="false">
+            <elementDefinition Id="d1faf44c-f52a-4a1f-a906-b4814742c806" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="8f0a90b3-abb6-4cda-9f8d-ef4ae45ede8a" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="36b1bb58-e664-4d7e-af87-801272e165d5">
+        <profileInstance Id="4c040e79-7403-4c6f-8d59-2d686022fd6c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5e3c24f3-ac23-4411-8071-0ebf62421abf">
+        <profileInstance Id="a838e2d5-e708-45c5-92bf-f722836c2b22" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

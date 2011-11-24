@@ -1,0 +1,1537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f7f9fcd9-6568-4e92-bfcf-ad6c7b17df1f" name="UMLClassDiagram2" linkedPackageId="df4ce930-a6a5-49e8-a6fa-57f90edbb8b8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="4ed37f2c-feaf-45d6-944c-68e01e89c958">
+      <elementDefinition Id="921de3ff-8832-450d-b5b4-49b5a0e589aa" />
+      <body>Patron de Conception : OBSERVATEUR / OBSERVER</body>
+      <annotatedElements>
+        <interfaceMoniker Id="9dd8af58-86a9-413a-99fe-af6ac46e9fba" LastKnownName="Observer" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="fec78371-835d-4e88-b5c9-d4546c8aee68" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="30c1ed59-55ad-406b-8529-52fe9179acf8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="723bad53-499c-452b-9983-f380baa78fa7">
+          <propertyInstance Id="fe36029d-bac0-4abf-8196-ee19a53f720e" name="BaseName">
+            <elementDefinition Id="dde8a8ea-13a9-4729-8e40-7b74e59cd45c" />
+          </propertyInstance>
+          <elementDefinition Id="e0344c0a-9490-4727-acf6-86291ce8128a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="663570b0-3836-4bf4-aafd-dfd451861600">
+          <propertyInstance Id="14573d97-f0c9-4f63-aad9-019899086328" name="ClrAttributes">
+            <elementDefinition Id="d33d66b5-7182-45a6-bd6f-4cf5938fd70b" />
+          </propertyInstance>
+          <elementDefinition Id="6614bd4b-f5bb-4569-ace2-61147a65c45c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0f7da5f0-015f-47cf-b9b3-56525df361a7">
+          <propertyInstance Id="25d313cb-2fef-4583-a2d5-a439a231b13d" name="Usings">
+            <elementDefinition Id="724c6f1c-591a-43bf-a65b-856404b74de2" />
+          </propertyInstance>
+          <elementDefinition Id="05556ba8-5f71-4467-aa30-ff1d629196b6" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="0264b360-78b8-49df-b44d-2a0048680885" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="15fdc1c7-8295-4678-977b-f52b822eb512" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="86976b9f-712a-4275-98db-54245dd6d0fc">
+          <propertyInstance Id="ea609741-5836-4cd1-8c80-3788ec21a842" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="4adb990b-7442-49c7-9a25-20242d3ad7b2" />
+          </propertyInstance>
+          <elementDefinition Id="9d06c7f7-3f88-4e7c-aa80-fc2fcd14df73" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7cbd615e-9b2a-404d-ac47-43d65eb42eda">
+          <propertyInstance Id="21c69bb1-1776-4a67-930d-d3c2ec159a16" name="TemplateFilePath" value="ClassTemplate=C:\Documents and Settings\TEMP\Bureau\ClassTemplate.t4|EnumTemplate=C:\Documents and Settings\TEMP\Bureau\EnumTemplate.t4|InterfaceTemplate=C:\Documents and Settings\TEMP\Bureau\InterfaceTemplate.t4|StructTemplate=C:\Documents and Settings\TEMP\Bureau\StructTemplate.t4">
+            <elementDefinition Id="a69285b3-b881-44f0-99a3-24b0186d0f60" />
+          </propertyInstance>
+          <elementDefinition Id="d53b37ef-dd5c-4f6e-8cf0-9d5d821a76bd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="057d71b9-7f86-4df0-add3-4e31f4e564f0">
+          <propertyInstance Id="7bde1b11-c703-4f84-a0a7-ad118b2d54b8" name="ProjectPath" value="ClassTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj|EnumTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj|InterfaceTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj|StructTemplate=..\SpaceBattleLib\SpaceBattleLib.csproj">
+            <elementDefinition Id="52dd82c9-597c-4483-819f-13bb23cb382a" />
+          </propertyInstance>
+          <elementDefinition Id="b443aa86-cea1-4754-b301-4e400d120d67" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="59a96a57-ae1d-4771-b209-d4355925ca6f">
+          <propertyInstance Id="e71120a9-4f36-4d19-84ed-acc92d05001f" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="77af2fc6-ab3f-4872-9b55-6d6021acee0f" />
+          </propertyInstance>
+          <elementDefinition Id="55faf6da-a03f-4c09-95ef-b95055660e9c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="19ba9f3d-8407-4794-bf5f-029e38c6c51c">
+          <propertyInstance Id="cea715f8-64ae-4368-8d0d-f89435932c9c" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="ec952289-5725-4000-a479-abee4fcc8c8b" />
+          </propertyInstance>
+          <elementDefinition Id="8275a092-54ec-4916-95f0-3978b901568a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1d7ec0f0-b388-4d02-a786-10d56bb1f46b">
+          <propertyInstance Id="643bb0e0-71e5-48c7-9e68-88530be36d9d" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="93887b1f-8220-4782-b65b-3dd2d77e8524" />
+          </propertyInstance>
+          <elementDefinition Id="9c9b774a-f95b-42c8-b863-4a1cfc781b65" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="736f9305-7d40-4985-bc87-3c4514e5e1ab">
+          <propertyInstance Id="ebef073e-5117-4948-b315-d67f064d559d" name="Parameters">
+            <elementDefinition Id="a0f134f5-6a38-4410-9b67-7d6888908fc4" />
+          </propertyInstance>
+          <elementDefinition Id="49246f5d-0de5-479b-81c7-bcd72e8fe2fc" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="0ce01f5e-7158-4624-b47b-11f83e1351b0" name="Vue">
+        <elementDefinition Id="30b1df23-9cbd-4bbf-b765-d3e612540889" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="80c147e9-b6cb-4476-ab3b-d1bdf21f0fcc" name="Interfaces">
+              <elementDefinition Id="b1ab9022-43fb-4560-bddd-de6114efcf34" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <Interface Id="f3a11c18-73c1-4e41-a133-fd988046b8fe" name="VueDes" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="3438b23b-59cf-4909-a841-5f063a3ab86b" />
+                    <ownedOperations>
+                      <operation Id="142d95ea-8c4a-4011-b7dc-0367c4cab5ff" name="getModele" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="c9543dad-0137-4b7d-9b6f-3b7ec0c626b3" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="0fc8aeae-f9ba-4135-840c-79898fa7d646" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="0d6901c0-fd26-4b61-9ecd-def3f71b30a4">
+                                <propertyInstance Id="5b385b25-eff1-406d-ad27-f494f1383a0a" name="ClrAttributes">
+                                  <elementDefinition Id="3bf1da99-7608-4fa7-9de4-839369289b85" />
+                                </propertyInstance>
+                                <elementDefinition Id="bb34a6ba-2ae8-4840-add0-256458fdfd2a" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="e704d0bb-1bb6-45b7-a6c2-630795b2c0b8">
+                                <propertyInstance Id="f80b221a-9109-410d-81fa-ea1e67cc70d2" name="IsPartial" value="false">
+                                  <elementDefinition Id="eb74c0ff-8974-47ec-b3fc-ff06c00b638c" />
+                                </propertyInstance>
+                                <elementDefinition Id="97a73313-17bf-47df-ac29-6ff1154a23aa" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="a58e9387-6255-480c-a9a2-6973053f8a4a">
+                                <propertyInstance Id="e7fa0bb0-71e6-4f34-b719-9c36b97f1499" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="55faf31a-edef-44c2-ba1d-4e532f49abd9" />
+                                </propertyInstance>
+                                <elementDefinition Id="5c4105ce-66e2-4a7e-892e-99ff02ed442e" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="b2086055-8806-4eb3-8dc2-3244d8ffdc72">
+                                <propertyInstance Id="c590fd40-37e9-45d2-b6fd-cde9a23226c0" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="4b97edb5-4de9-49f5-ac19-b528a62d2205" />
+                                </propertyInstance>
+                                <elementDefinition Id="2d0e2625-605a-4bc4-8f02-cd32fe985984" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="86943ca9-a743-4382-a2c4-8eb9b2ec9a66">
+                                <propertyInstance Id="a6ac831f-2785-425d-b8af-4b8c274ef174" name="params" value="false">
+                                  <elementDefinition Id="15035f2d-8502-49e1-84f0-692ddeece856" />
+                                </propertyInstance>
+                                <elementDefinition Id="4f82a2f7-2ea9-4219-8dfd-afbce4fbe1e0" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="f22a88bb-ff74-4668-a332-3c22622a8e9b" />
+                      </operation>
+                      <operation Id="c47337c3-3ef6-48e8-a59a-22f49eb14bba" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="0762a2ac-8a18-41ae-87d1-8a3e19f01755" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="8bfcc52a-8fbd-44d1-84e1-3627203f14fc" name="VuePlateau" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="da44d4f3-c4fb-459c-a4bf-ffe3465d96b0" />
+                    <targetEnds>
+                      <association Id="edd86c42-29f9-4fe7-86a9-d3dae8408ac2" isDerived="false" sourceEndRoleName="VuePlateau" targetEndRoleName="VueVaisseau" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="2d48120e-c6af-449f-b904-bad9532229fe" LastKnownName="VueVaisseau" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="2c7e6371-3ce2-491d-949b-eb94231ff21a" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="c8b03323-1504-4855-a9ef-e76d1451ef35" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="8a29951c-ce92-43b0-b131-43e33a6f5004" name="VueVaisseau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="2e81fe82-43b5-4bb0-9c81-b27bfd33fa0e" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="6c461b07-85a6-4ab4-9e4a-d79f26cf4880" />
+                      </association>
+                      <association Id="d4d1664c-a0d2-40ed-988c-0c3417585a5d" isDerived="false" sourceEndRoleName="VuePlateau" targetEndRoleName="BoutonTirer" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="ec63c77e-293a-417d-94cd-3937da1c3f5f" LastKnownName="BoutonTirer" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="16adb500-10d1-4383-9601-734ffdbfff8d" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="56c14c4c-88d1-4313-887e-86d7cc3028c8" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="cef88f53-29b3-4216-8443-3cbf6ecf065e" name="BoutonTirer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="850cde6c-2872-4090-8b31-ea6dff22ae7d" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="771eb374-91cb-464c-88c5-0c7e4cb72b3b" />
+                      </association>
+                      <association Id="fd88c767-d9c4-47b7-852c-6dee6e53b560" isDerived="false" sourceEndRoleName="VuePlateau" targetEndRoleName="BoutonDeposerArtefact" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="c8eaf662-bde9-4798-9bf3-a70482a72930" LastKnownName="BoutonDeposerArtefact" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="f663bbf1-0e94-4495-b748-4cd85b48481d" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="f635907e-62cf-476e-933f-8dd21fe9ab76" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="2bbbeb43-3cd8-420a-8496-3ccfa501815a" name="BoutonDeposerArtefact" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="357c4e67-0e6f-49c6-aaed-dbc44a4acb02" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="a6fcb4fc-168b-4afe-b7b2-3afe950fe9fe" />
+                      </association>
+                      <association Id="46c71646-8522-4419-a255-7fe63a38ef51" isDerived="false" sourceEndRoleName="VuePlateau" targetEndRoleName="BoutonChargerEnergie" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="04c6c3aa-9065-402b-9081-e439df84fca0" LastKnownName="BoutonChargerEnergie" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="45016d22-3e44-48b2-a93d-e8e04616bed8" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="69d54c7d-b67d-4b39-81a0-14ccfb633e65" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="f9182fdc-7fa9-437b-ad96-b3660e75d237" name="BoutonChargerEnergie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="a78d0081-2321-4117-9d5a-31e623ac9e90" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="770d790e-b3dd-4e35-ab5e-ae0f3643936c" />
+                      </association>
+                      <association Id="8ecd74f0-a283-44cb-9556-ed0a5ea067c2" isDerived="false" sourceEndRoleName="VuePlateau" targetEndRoleName="VueGestionTir" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="16918e44-c823-4d77-929f-42c569863a53" LastKnownName="VueGestionTir" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="f288b174-a94e-4701-9991-e8b469abafd5" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="15bd51f1-b497-4c1d-9b0d-b1af42d0dc87" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="1da0d466-1af5-40e2-9822-9d730225df80" name="VueGestionTir" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="edcb9ec2-e9bf-4ec8-a66d-0058356f4fcd" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="668f4ea7-f7e4-42b5-896e-6888a5be305f" />
+                      </association>
+                      <association Id="c184a6af-a192-4dcc-8f69-7eed7b2a2f31" isDerived="false" sourceEndRoleName="VuePlateau" targetEndRoleName="BoutonPrendreArtefact" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="b80b7047-9bfd-448d-b465-9dbc03015965" LastKnownName="BoutonPrendreArtefact" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="53edb9e1-ce07-47dd-8393-c63393263a98" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="092906e7-c5be-41e1-9861-d9a37be6fadf" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="84898945-2525-4c7d-8bdf-f5fb2d89a094" name="BoutonPrendreArtefact" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="ebf49abd-8a5d-480a-95e7-d160ed617cb1" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="4730bc50-16c1-4e19-a993-65377de7d94e" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperations>
+                      <operation Id="0d56e907-3b97-4e4d-82a4-690de4e2ca9f" name="getModele" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="14b96b86-f1f4-4343-ad04-97c79fb62704" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="c738950c-b28e-40ce-aebb-44a5d79cbcd9" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="575c57db-2500-481c-870a-c055eaaa7d7a">
+                                <propertyInstance Id="20769e68-eb7a-4a52-9a58-d09d40afd444" name="ClrAttributes">
+                                  <elementDefinition Id="af7787bc-9aeb-426d-be30-ea821b6a95be" />
+                                </propertyInstance>
+                                <elementDefinition Id="2a90e0e1-3473-40de-8cf8-00ce93366ed2" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="0e80882c-6d22-44c6-b74a-542cf495e007">
+                                <propertyInstance Id="d0ba608e-1584-4bdd-a312-eb7a55c8f292" name="IsPartial" value="false">
+                                  <elementDefinition Id="de8bae53-c238-488b-8bf4-2265ad84f100" />
+                                </propertyInstance>
+                                <elementDefinition Id="0e1d1db7-fe39-49c6-910d-df86d94efeee" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="136572b2-0989-4ed2-ab85-370fccaff211">
+                                <propertyInstance Id="fdb9559a-e97e-4bac-8583-04c5bbd26cb5" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="1ecfe103-5463-4029-ba6c-75d13073c7db" />
+                                </propertyInstance>
+                                <elementDefinition Id="d14356a3-4738-4216-8c18-01a487ff40b2" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="1631e46d-3dd1-4ed4-b630-6584a390cabf">
+                                <propertyInstance Id="09635be2-c063-4627-b3e9-e0f84476e78e" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="f2913bcf-63f6-43a2-9b11-4cc464fdde1e" />
+                                </propertyInstance>
+                                <elementDefinition Id="dc9cded6-e4d4-4a4e-af56-955615d9b070" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="b832f548-4441-431b-baa0-7af19f3cabd1">
+                                <propertyInstance Id="30f70d31-1cde-4a04-ae6b-e02028c61ef3" name="params" value="false">
+                                  <elementDefinition Id="31623c24-6adc-422c-9591-4a35862841fa" />
+                                </propertyInstance>
+                                <elementDefinition Id="488e9231-7e05-41b0-afe1-e152b113df32" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="d3fd1c14-ed8f-46e6-b3c2-c7ff3097e6aa" />
+                      </operation>
+                      <operation Id="94a0c37b-9cb0-4435-9cd9-3fd6569d2614" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="e09e69bc-1633-4e0b-9a8f-b5bc29a74d69" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="16918e44-c823-4d77-929f-42c569863a53" name="VueGestionTir" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="c6dac2e5-2e45-4e99-85bb-66e1dbde8981" />
+                    <ownedOperations>
+                      <operation Id="e9612607-c831-416b-9398-ea22b55d72f9" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="678b06bf-a9d2-48a9-9684-ba6aae12cd4e" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="2d48120e-c6af-449f-b904-bad9532229fe" name="VueVaisseau" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="1809b65a-c657-4749-b5fd-76ed47ddea7c" />
+                    <ownedOperations>
+                      <operation Id="8f309330-c7d1-43a6-89f1-b79ea8375a1c" name="getModele" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="ee9ddacd-7b28-484e-bfa4-a60b8cfdbc2c" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="1ee4c5ec-3eef-4030-850c-e4d6d5a597b7" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="756d3462-6b8c-4a91-b3fe-474bf4ab8799">
+                                <propertyInstance Id="16ff8f8d-9be7-46dc-abf1-62c9b36a02a8" name="ClrAttributes">
+                                  <elementDefinition Id="7edba1b0-7c26-4614-9a8e-608a69eb557a" />
+                                </propertyInstance>
+                                <elementDefinition Id="f5d01aea-3892-4fc1-963c-916d8ba996ba" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="30adc237-7110-4ae5-a0d0-95a7282efa70">
+                                <propertyInstance Id="60b3e039-524a-4033-a040-b524c689f2bc" name="IsPartial" value="false">
+                                  <elementDefinition Id="a7e6b7b9-13ea-4d97-a110-def0d215ed39" />
+                                </propertyInstance>
+                                <elementDefinition Id="f528f2d6-90a7-4284-b424-66870bd57242" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="2487cebc-43c7-4235-80f1-f81e3d547021">
+                                <propertyInstance Id="c9631550-ca65-4b3f-ba1b-880224cec6f0" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="5e5aaa4a-1b9e-48e7-9a8a-afad6f33f906" />
+                                </propertyInstance>
+                                <elementDefinition Id="b6c1fcfd-6970-472e-8b43-53b8ca0ddd3e" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="b688a811-5f2e-45d6-b696-aadc8fadf5cf">
+                                <propertyInstance Id="14f5fb40-9b72-4728-836e-8638abd0e671" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="522e8b1f-685c-4e76-a521-c2c3a7f73254" />
+                                </propertyInstance>
+                                <elementDefinition Id="518ab911-f069-4cf5-895b-77a843eb9c0b" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="f84a2839-f5fd-421d-9077-a5234d3b0e98">
+                                <propertyInstance Id="3182f039-6dba-40aa-b9d1-c0004152b624" name="params" value="false">
+                                  <elementDefinition Id="78d59baa-0fbc-499c-97ea-3fa337339679" />
+                                </propertyInstance>
+                                <elementDefinition Id="1ae3b674-3b8a-48f7-833a-6d961e840665" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="88736574-fa68-492a-a3a8-8f8800b5ee7d" />
+                      </operation>
+                      <operation Id="c006e65b-fafe-48b7-8291-a089b228c8de" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="7d3d5524-cba7-4545-85ef-97e70abe65cb" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="f4402b4b-f420-4014-ac00-c0babe9fa704" name="VueFabrique" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="dbed6722-6dca-41fe-ac3c-782e6ef5468b" />
+                    <ownedOperations>
+                      <operation Id="39fbe4a0-2f27-4996-a8a2-c41bf021f26b" name="creerVuePlateau" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="fde03a98-f78a-43ab-a42b-038f77609628" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="1ff3a482-efd0-4b3e-9227-e2e99210cc1c" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="d7c63c40-8958-424c-9e05-64e13cfc8d1a">
+                                <propertyInstance Id="ee02d052-f5c9-4955-bda6-4d4e0ea60c13" name="ClrAttributes">
+                                  <elementDefinition Id="328b6068-4d6e-4e76-8f67-76e88e95a9fa" />
+                                </propertyInstance>
+                                <elementDefinition Id="da5787e8-c97e-48ad-a802-16ec416042a3" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="639efacf-cefc-4f34-ad6e-123faace0ab4">
+                                <propertyInstance Id="8bbd44df-bf7b-47db-a043-153e7a15935d" name="IsPartial" value="false">
+                                  <elementDefinition Id="0bd6f85d-c6aa-4b0d-be9c-bec9d3a0d405" />
+                                </propertyInstance>
+                                <elementDefinition Id="4af896e0-159a-451b-8a70-782184a94fc1" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="0258709d-2cd0-486e-8426-d7ec51d11b1f">
+                                <propertyInstance Id="3c7b5a33-1832-46a7-a2cf-680e7a375567" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="6fa25809-4350-4c17-b844-f36d5418ec4d" />
+                                </propertyInstance>
+                                <elementDefinition Id="51209806-35b2-4edc-939f-e49869198363" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="b47ab994-2975-4825-82eb-319ba9f00dcb">
+                                <propertyInstance Id="39050df1-18e9-4a95-8535-4446c618dd44" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="5a66e2ee-ce46-4204-b8c4-ca81ed15e7c4" />
+                                </propertyInstance>
+                                <elementDefinition Id="54b32115-ea66-437a-b301-9bbe82e6f843" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="f14975b9-4d56-43e1-a350-72970b1d952c">
+                                <propertyInstance Id="ceefa7f1-0d39-4635-a4c7-54d6caf021cf" name="params" value="false">
+                                  <elementDefinition Id="5bd31fbe-72e6-4917-8e37-cea3805456cd" />
+                                </propertyInstance>
+                                <elementDefinition Id="5cd79a17-06f5-4035-aaed-076da3cff837" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="2556be25-4c00-40dd-8e36-818f4dc92d94" />
+                      </operation>
+                      <operation Id="41173d46-a6a6-431c-8ffe-3de8d97eef11" name="creerVueVaisseau" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="6ff048de-b7c2-4d44-8263-2797b26edcc2" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="e1321686-8f17-48c9-a409-6e5ea3f96af6" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="1ae456fa-567d-4452-bf10-a1ba71200f6f">
+                                <propertyInstance Id="3248cd31-3946-4c35-97d6-cf72e673581d" name="ClrAttributes">
+                                  <elementDefinition Id="16fbc745-eec9-490b-87a9-1df451688429" />
+                                </propertyInstance>
+                                <elementDefinition Id="9e9b6576-cc46-436f-9a86-797d685d75fb" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="e013b382-32bc-4b9a-b222-387052ca9162">
+                                <propertyInstance Id="5e72b606-a71a-4286-bafe-80f2f8c6abc7" name="IsPartial" value="false">
+                                  <elementDefinition Id="d8e2eb37-2d51-4171-ae99-b814f859a732" />
+                                </propertyInstance>
+                                <elementDefinition Id="012bb311-0e37-4dab-82f5-0fee1a899989" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="73396d23-966c-47e5-a8b9-26940887875c">
+                                <propertyInstance Id="387a74d8-3306-442c-b4be-d401608cc23f" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="f9ce0bda-b871-45e8-9c10-d6e5c4494832" />
+                                </propertyInstance>
+                                <elementDefinition Id="433bc212-fe16-460b-b3ec-ba9dd9deba0b" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="235ed550-cf24-4028-9e58-4e18de909778">
+                                <propertyInstance Id="6083df58-dd9f-4d10-a41f-d95f80be5d64" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="c7b5d25c-7b75-4f5a-bef8-609c14a3a471" />
+                                </propertyInstance>
+                                <elementDefinition Id="bfcab1d1-cb5d-41e2-b6f0-98837120c9d9" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="1d9150e0-3dc4-4c05-a05c-4732fe24bd86">
+                                <propertyInstance Id="00fff87d-d57f-417f-84ae-c4ad1d10c73b" name="params" value="false">
+                                  <elementDefinition Id="9d4bbe71-f883-4b1d-9eb8-380d1fb380f7" />
+                                </propertyInstance>
+                                <elementDefinition Id="e63204dd-7c94-48ad-bf2b-a3e7d1584708" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="5a5b3472-d990-4d60-b8b0-6bb1186b5cb9" />
+                      </operation>
+                      <operation Id="59b8af63-5b1d-4e0f-aa8d-96eaf4e24107" name="creerVueDes" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="9e7176fc-547f-4e84-a67c-d00704066ae7" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="477a63db-2dc1-4fd8-b592-110e4f339d4b" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="9d80a2b4-a5fd-4cc3-bac7-a7f411319a2b">
+                                <propertyInstance Id="c5fe8e61-507f-4e9b-8d1e-9f2b8a95cb20" name="ClrAttributes">
+                                  <elementDefinition Id="d7df5e3a-9594-40b0-bb05-f21bf505d2ac" />
+                                </propertyInstance>
+                                <elementDefinition Id="1e74578a-9c3a-49e3-87f0-69f4a26725d3" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="38bf58e5-f50d-4b9f-a147-c2f3e9ef08c7">
+                                <propertyInstance Id="5ea7601a-6057-4cb8-9958-7ddf2a199506" name="IsPartial" value="false">
+                                  <elementDefinition Id="e6d4ebdd-3913-4fa0-8d8d-ef5c4b168496" />
+                                </propertyInstance>
+                                <elementDefinition Id="5922bf01-9621-43a4-84cc-f736199e5372" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="7267fad6-bc35-412e-b6ae-1f055d1a024d">
+                                <propertyInstance Id="4fb1ada3-31ea-44a2-b43b-f69fc8d3d81c" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="600c347d-f636-4941-a134-a8cd0e54d8f1" />
+                                </propertyInstance>
+                                <elementDefinition Id="aabe87db-5212-446a-b7ae-ad02264327ad" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="41ef3a09-6a9a-4832-bc91-30adfb3f83e8">
+                                <propertyInstance Id="5454e4d8-f90f-46ca-8e94-d9e21ef4a2f1" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="41daa414-4afd-4aa4-80cb-2e7a85bdcc97" />
+                                </propertyInstance>
+                                <elementDefinition Id="366d271a-a1ba-48a2-a444-65d8528328eb" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="bf7c56a1-6c19-4ba8-b2b1-31cc73923796">
+                                <propertyInstance Id="071ed25c-3b86-4488-b054-34e737d74a97" name="params" value="false">
+                                  <elementDefinition Id="a30a1497-b312-4851-b355-8cd9413bf0b6" />
+                                </propertyInstance>
+                                <elementDefinition Id="9db2276f-0826-4335-9211-010514f6704f" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="0aa5ccd3-047f-43f5-bf03-7b9253b74db7" />
+                      </operation>
+                      <operation Id="44faed61-18d0-41a0-b307-fd4fa6137f9d" name="creerVueMenuPrincipal" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="3993f309-8939-4876-8d57-0b5b1cc7bc3b" />
+                      </operation>
+                      <operation Id="23b20c3c-f098-4e24-add3-d2dfbcf402e1" name="creerBoutonCreerPartie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="2b20e25d-d607-4724-b594-601aa57fba98" />
+                      </operation>
+                      <operation Id="5344c044-7f79-4e40-bb8b-b3885796527d" name="creerBoutonQuitterJeu" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="406059bb-7e57-4813-ae41-3729f5da8e3c" />
+                      </operation>
+                      <operation Id="a310c5f9-e4af-41fe-8213-e36782bcdfbe" name="creerVueMenuPartie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1169b979-cec5-4e96-8afd-b8f8fb4b7b78" />
+                      </operation>
+                      <operation Id="959195ef-bfe5-4c1c-b5ed-54388e45c1e6" name="creerVueFenetreJeu" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="7813610f-1384-4d85-8b22-30e1a44b5f17" />
+                      </operation>
+                      <operation Id="69cda320-da62-425d-86ef-51dabac3a99f" name="creerBoutonLancerPartie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="5a7d27f6-5ff2-479f-acbe-89607e55d519" />
+                      </operation>
+                      <operation Id="a286b037-067a-464d-bfe8-941dac57297a" name="creerVueColonneInformations" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="5bfbdf4e-599b-4347-ad0a-f59b94324e91" />
+                      </operation>
+                      <operation Id="759f4737-ce52-4e51-aa27-f1a37fb4ce86" name="creerVueGestionTir" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="ceb4414f-0638-445a-a648-9c0df3b9597a" />
+                      </operation>
+                      <operation Id="6606ad3a-a0f0-44c4-8d79-ff79aaf7311c" name="creerBoutonTirer" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="b6648932-c12a-46a9-be38-6f82e26bf664" />
+                      </operation>
+                      <operation Id="fe056060-d7c0-4f44-9482-94ebaf505a24" name="creerBoutonDeposerArtefact" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1445c325-5a8a-4ef5-9423-7aa93bc01b52" />
+                      </operation>
+                      <operation Id="16f03ad0-81fa-404b-8547-a5a67ecc46d1" name="creerBoutonPrendreArtefact" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="c3cbb329-c3f4-4c3b-b0cc-d8e5e6bec096" />
+                      </operation>
+                      <operation Id="52df11de-a42b-472f-ae69-5ce08513e884" name="creerBoutonChargerEnergie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="16cef8e8-fa9b-4ea5-b2b5-b53a4eacfcef" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="762d694f-190d-4d17-a979-0544668246fb" name="VueFenetreJeu" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="755492b8-e925-44df-84e7-b4a64109e29b" />
+                    <generalsInternal>
+                      <generalization Id="2e53b5c7-043d-4d99-8c01-325bf5fd9a52" isSubstitutable="false">
+                        <interfaceMoniker Id="9dd8af58-86a9-413a-99fe-af6ac46e9fba" LastKnownName="Observer" />
+                        <elementDefinition Id="cfaf491b-7f83-4fb1-b25b-93a954e7d12c" />
+                      </generalization>
+                    </generalsInternal>
+                    <targetEnds>
+                      <association Id="b814828b-5e14-4c10-a66f-83b315821329" isDerived="false" sourceEndRoleName="VueFenetreJeu" targetEndRoleName="VuePlateau" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="8bfcc52a-8fbd-44d1-84e1-3627203f14fc" LastKnownName="VuePlateau" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="9bce3ddf-5ad6-4129-be75-a414ea5c1ea4" name="VueFenetreJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="803804a4-30c9-4e68-9fac-7725e92a3efc" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="bfb6c57a-36f7-4a5c-9ef5-f9404e5616b0" name="VuePlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="02a2540c-c43e-45b6-8748-0ae01b6fadf6" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="93f6668f-62c5-4287-8caf-6807b59d765b" />
+                      </association>
+                      <association Id="e9ade4d4-9c44-44ab-a2a3-c4e6332c261a" isDerived="false" sourceEndRoleName="VueFenetreJeu" targetEndRoleName="VueColonneInformations" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="58bf9100-e275-48fa-9a4d-0dfef1c99f83" LastKnownName="VueColonneInformations" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="c5ae57c0-38f7-4215-b481-022d6ebfe035" name="VueFenetreJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="19fa34a9-d284-4dd3-90b8-457faa6a2db2" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="0c747cb4-889c-4693-a473-7577dbc51097" name="VueColonneInformations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="048283ed-1678-4f6e-bf11-7e0c21cfe51e" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="ce57f3a8-d8de-457c-b0de-34426e8fa03b" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperations>
+                      <operation Id="82a7df4b-6e5f-4765-bf4e-ee339d4c32e1" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="602e2560-9618-4899-b602-5218049937cc" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="647f21dc-7a16-4c09-bf44-6a7aebfb3eb2" name="VueMenuPrincipal" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="27364f30-e1f1-4ae4-88b4-e503a3090f0d" />
+                    <generalsInternal>
+                      <generalization Id="398efce8-0da7-47f9-82d2-c80b8372a244" isSubstitutable="false">
+                        <interfaceMoniker Id="9dd8af58-86a9-413a-99fe-af6ac46e9fba" LastKnownName="Observer" />
+                        <elementDefinition Id="ae11f6a8-76c1-43bf-9997-fe77e4c75de1" />
+                      </generalization>
+                    </generalsInternal>
+                    <targetEnds>
+                      <association Id="182ce8d2-1213-4873-ab44-4b8e37af9320" isDerived="false" sourceEndRoleName="VueMenuPrincipal" targetEndRoleName="BoutonCreerPartie" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="27889165-856c-483f-bf25-0d8bcb17a6fb" LastKnownName="BoutonCreerPartie" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="ef828d97-6b58-433a-80b2-a2f62954a1da" name="VueMenuPrincipal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="a4430cf7-58e8-4420-8675-aeccb2765261" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="fb7fc8c2-35cb-444b-9388-7beecf93c633" name="BoutonCreerPartie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="03b66b1c-6b78-435a-984c-5ee22d150f22" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="c9fb7502-d63c-4142-a26f-3b16c397a98e" />
+                      </association>
+                      <association Id="a38bdb25-133e-48fa-9b07-b0b136348a59" isDerived="false" sourceEndRoleName="VueMenuPrincipal" targetEndRoleName="BoutonQuitterJeu" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="9414d0f1-40f4-48bb-8417-7651fbc77369" LastKnownName="BoutonQuitterJeu" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="e07a4957-7fd4-4413-9a7d-279241d2e86b" name="VueMenuPrincipal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="f264b922-a8d5-4670-ab44-dd911f3fc904" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="aa005323-29ab-488f-96a7-075b342e6501" name="BoutonQuitterJeu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="35f58543-b937-43f5-bed3-dacfec794d1a" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="4c2712f6-c9b7-48a2-8d7e-ffe056528b4f" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperations>
+                      <operation Id="da0e9d90-abdb-429c-9cb8-e9e66fb7ba64" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1b38a98e-91d8-4c32-a1ca-fb8852c33540" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="58bf9100-e275-48fa-9a4d-0dfef1c99f83" name="VueColonneInformations" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="c44e7d19-3343-4346-84c0-5a84b07ee890" />
+                    <targetEnds>
+                      <association Id="262c3a6a-a3bb-4e27-9ac2-fec17edc2bd9" isDerived="false" sourceEndRoleName="VueColonneInformations" targetEndRoleName="VueDes" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="f3a11c18-73c1-4e41-a133-fd988046b8fe" LastKnownName="VueDes" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="edad0229-e15b-47d2-860b-c539a64c5546" name="VueColonneInformations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="b2458c8a-7487-4983-bf47-efb6bec768d8" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="861b8932-b210-435c-a8b7-d4a05918564a" name="VueDes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="0db116d5-492b-4948-97dd-815957ce5d1b" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="35ccd815-1d73-4e31-b555-0125f674b2e8" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperations>
+                      <operation Id="dc128c2f-ba46-45c6-b84e-e39a66dfba8e" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="ba2ad0be-3683-4a64-ac7f-6e2d0dc13812" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="ec63c77e-293a-417d-94cd-3937da1c3f5f" name="BoutonTirer" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="748d792e-3bad-4818-9a00-df50a12b4be3" />
+                    <ownedOperations>
+                      <operation Id="87973f3c-4982-4009-a359-741a83f58efd" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="3ac2a275-c628-48b1-9cc5-ee49d335a9aa" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="c8eaf662-bde9-4798-9bf3-a70482a72930" name="BoutonDeposerArtefact" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="b68ef8fa-5540-4dff-a928-98fabed240d3" />
+                    <ownedOperations>
+                      <operation Id="291c4bab-a14d-4109-897a-eaa42e75aa57" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="52caba1f-559e-4afe-92a1-9fb796b49ba6" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="b80b7047-9bfd-448d-b465-9dbc03015965" name="BoutonPrendreArtefact" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="c764027f-4bb1-421d-9b43-43f462efccaf" />
+                    <ownedOperations>
+                      <operation Id="27f284a2-8e57-4235-93a1-6ddb830cc838" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="7425274d-b28c-4905-8c2c-38be5dec4e01" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="04c6c3aa-9065-402b-9081-e439df84fca0" name="BoutonChargerEnergie" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="d1f0b34e-1122-4581-8313-ea38ce608614" />
+                    <ownedOperations>
+                      <operation Id="5c960649-79f0-40fe-94ca-2d5c2ce2e703" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="057bb1f8-458d-484d-b59f-9905776525cb" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="d75e91a4-9cb3-4b18-a810-f6a1c17996e2" name="VueMenuPartie" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="bb4c337f-17c9-47b5-a457-ddcc2ffa9326" />
+                    <generalsInternal>
+                      <generalization Id="23ba4dcf-f97e-411a-8e7e-9245f87751af" isSubstitutable="false">
+                        <interfaceMoniker Id="9dd8af58-86a9-413a-99fe-af6ac46e9fba" LastKnownName="Observer" />
+                        <elementDefinition Id="ecf84c27-7f5d-41af-8e07-44848c66c5f9" />
+                      </generalization>
+                    </generalsInternal>
+                    <targetEnds>
+                      <association Id="42e06b2b-f6dc-4789-b637-e1fa105a4460" isDerived="false" sourceEndRoleName="VueMenuPartie" targetEndRoleName="BoutonLancerPartie" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="9f224aa5-0d71-48e2-82da-941e6d8c9c97" LastKnownName="BoutonLancerPartie" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="37a14501-83a0-4e0a-88ac-1b8dba10bcec" name="VueMenuPartie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="4e1fad59-ee6f-4486-88f5-35a9d29e92f7" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="11d61bf4-46a2-435e-8d98-8f46032b23f7" name="BoutonLancerPartie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="5cf33560-2f0f-4893-84f9-4875563005d0" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="041ad03f-35fd-4506-aaef-cd922bd938a2" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperations>
+                      <operation Id="7e2c31ec-3a1a-4141-aa68-3a87c7f907d9" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="19b13600-bf65-432a-8204-d13721aaede7" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="27889165-856c-483f-bf25-0d8bcb17a6fb" name="BoutonCreerPartie" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="b1ba26da-f39b-424f-abc3-24cc92b6b7a3" />
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="9414d0f1-40f4-48bb-8417-7651fbc77369" name="BoutonQuitterJeu" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="8c833bd5-f18e-478f-a99d-d7d31544380c" />
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="9f224aa5-0d71-48e2-82da-941e6d8c9c97" name="BoutonLancerPartie" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="568f7793-fe18-4e86-889a-bec26fd12540" />
+                  </Interface>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="48ab4c0a-4e0d-4c1a-a7a8-0bfb2a6c8651" name="Implementation">
+              <elementDefinition Id="62ddf9e3-f764-4219-be98-0ca3b47bf67f" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="c9abddb6-4453-4b9a-84f5-59c2e43fceae" name="VueGestionTirImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="287659a8-1735-4baa-b651-50271d221a22" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="819711b3-db99-4a1b-9aa9-3f65d17d10fd">
+                        <interfaceMoniker Id="16918e44-c823-4d77-929f-42c569863a53" LastKnownName="VueGestionTir" />
+                        <elementDefinition Id="01535a12-ec3c-4a9a-add1-8bebee5ccafe" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="1aa55799-f971-4b94-84d9-3dbe762ae231" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="0b04617a-6b88-4395-a4f6-49660387f168" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="0137a7e6-b844-40eb-94c6-692d128443c4" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="226c4359-8b56-4b83-b3eb-b2edd28695ca">
+                                <propertyInstance Id="c1454138-96ba-473f-8da5-2d082648948a" name="ClrAttributes">
+                                  <elementDefinition Id="29de1325-b9b0-4341-8640-4a3b917eb986" />
+                                </propertyInstance>
+                                <elementDefinition Id="8230b0ec-fc97-4060-b628-e131fa3c4766" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="c7a9d41a-9ff8-49c1-aef5-c30a5d30664a">
+                                <propertyInstance Id="088f30c5-c10a-4019-9e87-a8d2f60cee3b" name="IsPartial" value="false">
+                                  <elementDefinition Id="d422bfd7-dfd7-4545-b79b-7d4cb2b4935c" />
+                                </propertyInstance>
+                                <elementDefinition Id="780964b8-67e0-40d9-89fd-b8b825bbbbe5" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="1c1634e3-8b02-4750-a4cd-0235ac77ef17">
+                                <propertyInstance Id="663ea195-e8df-4571-989f-1af60ee44bc7" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="ff37065f-a1db-4c7f-99a9-eaf55c0f8c8d" />
+                                </propertyInstance>
+                                <elementDefinition Id="4d85afc3-2bb3-4812-b9cc-7bf6d0c34e13" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="20a3c944-e49e-4c7a-a15a-6011bd0dc329">
+                                <propertyInstance Id="55610284-96e6-43f6-8606-7cde72350052" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="f95aa002-34a3-40dc-99b9-f488ae6e408b" />
+                                </propertyInstance>
+                                <elementDefinition Id="8c21a6db-9eb6-44c0-be4b-961b0dd05de0" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="03a5858c-cfed-415b-812e-83ceeef2a758">
+                                <propertyInstance Id="1bc42d79-76f2-4f10-bfcd-1d6fae74e6ff" name="params" value="false">
+                                  <elementDefinition Id="cdef582f-73c3-4dbf-9bdf-7cdad3886ddf" />
+                                </propertyInstance>
+                                <elementDefinition Id="c737d5e2-d75b-4074-bf9d-cba529c62994" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="570f6bef-47d9-437a-a13e-1d30feaeaa03" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="405d39d1-4f17-41f2-bce1-66a293550eed" name="VuePlateauImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="07fe433a-955a-4c9f-84d2-ec6d8ce6f830" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="48b1bc4f-c5b3-4047-b9e3-a34c76b9e6c6">
+                        <interfaceMoniker Id="8bfcc52a-8fbd-44d1-84e1-3627203f14fc" LastKnownName="VuePlateau" />
+                        <elementDefinition Id="45468441-24bc-4cdf-942a-37195582699c" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <targetEnds>
+                      <association Id="00025b0a-4708-43e3-8fb4-ff38e8eda2f7" isDerived="false" sourceEndRoleName="VuePlateauImpl" targetEndRoleName="VueGestionTirImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="c9abddb6-4453-4b9a-84f5-59c2e43fceae" LastKnownName="VueGestionTirImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="9fbbfbf0-253f-43b8-802b-6cf7f7de9261" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="38e044ed-55b0-4f6e-b046-eab5b8e7df1f" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="bb468f92-cffb-4019-b550-7e6cfcd42b75" name="VueGestionTirImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="3140402c-2458-43a3-8416-7b703ba04934" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="9686c7fe-5273-4446-b161-91ac11b70d0a" />
+                      </association>
+                      <association Id="deabb3c2-43db-48df-9a84-24a9c257b719" isDerived="false" sourceEndRoleName="VuePlateauImpl" targetEndRoleName="BoutonChargerEnergie" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="ec9c1783-6011-4a92-96cc-ac2f689401f6" LastKnownName="BoutonChargerEnergie" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="a243878c-db13-4389-a58d-5c7d06f7b4d7" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="50931357-dc2e-4b08-b671-37aa9ab67ec3" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="36f6e646-7245-4175-bfca-5a16c5226f46" name="BoutonChargerEnergie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="fcf98a50-6ec5-4b59-9076-29372ee1bea8" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="725732b9-0f6a-4a37-beb0-405425c76bab" />
+                      </association>
+                      <association Id="8fdeec10-3efe-4f0a-a2a8-a2c51d134c9d" isDerived="false" sourceEndRoleName="VuePlateauImpl" targetEndRoleName="BoutonTirerImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="9ec1d0a7-0403-40c9-bdfe-c487d2de1d40" LastKnownName="BoutonTirerImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="8f4881b6-556e-4647-a3fa-c7d0e956b6e1" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="a330670d-0097-43b5-85e3-956dc600f0d9" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="c6b790cb-a2f9-4a40-9697-e619fcf5d209" name="BoutonTirerImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="35cbcaca-78b2-4402-88f6-11755fcf7aa7" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="21a09eb8-7821-435a-9149-fcdf5783aa25" />
+                      </association>
+                      <association Id="9559b000-b9f9-4b89-b7bd-2292e9139bf4" isDerived="false" sourceEndRoleName="VuePlateauImpl" targetEndRoleName="BoutonPrendreArtefactImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="c097c3e4-2ab7-4226-a26b-abb90be231ef" LastKnownName="BoutonPrendreArtefactImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="e9a958d7-af70-4ffc-877a-aced9f1caa21" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="d617c072-1eb8-4d99-bebd-6c582a5ffcd9" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="7a6b706a-d8c0-4093-9cb4-0a6e050d823b" name="BoutonPrendreArtefactImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="bfd366b0-adb9-47e4-9c40-a8e035902f04" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="2fc86603-e70e-4c1d-beb1-a7fa07fd43d9" />
+                      </association>
+                      <association Id="5eaf400a-c6d7-4a37-856e-ffb992fbc8cd" isDerived="false" sourceEndRoleName="VuePlateauImpl" targetEndRoleName="VueVaisseauImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="9e9af19c-2a0a-4660-9ad8-e31721d7003e" LastKnownName="VueVaisseauImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="25152678-08c8-4c4a-be1b-50ccac34e53f" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="ded88314-65aa-41de-899d-c716dd27d138" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="a95a30d6-7b3e-41aa-9795-c9d1d60473c2" name="VueVaisseauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="9882de05-8e33-473d-ac5c-6126ac727e67" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="46bc8149-4d35-47b0-a7d7-3de4102422a1" />
+                      </association>
+                      <association Id="078aca61-99ee-4b51-b4ba-f1f5f476109c" isDerived="false" sourceEndRoleName="VuePlateauImpl" targetEndRoleName="BoutonDeposerArtefactImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="5a9d76c4-638f-457a-9793-729b6e95a9ca" LastKnownName="BoutonDeposerArtefactImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="83ed37b3-4d14-4369-b46c-5c83d011f073" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="f4838d21-aefb-4be4-9cca-8a23b937a263" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="75ee3388-448d-4a3d-aba1-f7b19dee135d" name="BoutonDeposerArtefactImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="8ea19dba-460b-40c0-a087-1d0a5045ac01" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="844fabfc-8731-4bef-8670-fef801d4a2b1" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperationsInternal>
+                      <operation Id="966a09a8-41c4-41cf-b086-90f8a66f70bd" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="89fdd94c-289b-4b11-b4c3-931e4a1b9dda" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="df6d95bd-b981-4eb0-9628-f1d77049a027" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="4c0ef4b7-5e92-44db-8f11-3716d45c5d78">
+                                <propertyInstance Id="17e4b0fd-ea5a-4335-b5ba-cc1658f525b0" name="ClrAttributes">
+                                  <elementDefinition Id="bd419651-de72-4b4f-bded-838111177a41" />
+                                </propertyInstance>
+                                <elementDefinition Id="4d4fee50-d578-495d-a965-7cbb6f170962" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="bb9e4a34-99c3-411d-bb49-a36ccfad8beb">
+                                <propertyInstance Id="0b8fbe6a-bcf4-4237-8ba0-a02b15f06528" name="IsPartial" value="false">
+                                  <elementDefinition Id="52149c60-c26b-47cc-b0b2-70234aadf4e0" />
+                                </propertyInstance>
+                                <elementDefinition Id="e74e447e-4823-4938-89d2-5348f4523116" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="3e545cf9-b438-4863-a35c-7731dd52a2b6">
+                                <propertyInstance Id="ba2ed6ac-9e44-430a-a3f3-b9010fe2f396" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="d4143683-9d8f-4080-8c2e-0c12cdb26b50" />
+                                </propertyInstance>
+                                <elementDefinition Id="c0a142ac-cdb3-4883-8b05-bc86b8d559ad" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="b1ada264-c2ba-44dd-bc28-30cafef6594c">
+                                <propertyInstance Id="dd16f7c7-9f79-4bb3-b7fe-fdacda5e3971" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="8264645c-d67f-484e-bae3-8b77dac0a035" />
+                                </propertyInstance>
+                                <elementDefinition Id="9e620baf-7d58-4bb8-9865-8b27ef89eff2" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="e62f0b52-e0c1-4564-a1da-f380b8688d30">
+                                <propertyInstance Id="b6457f7f-28b0-4c69-9943-46e070d5cba8" name="params" value="false">
+                                  <elementDefinition Id="60d8c90d-b46e-4590-afa0-914272252796" />
+                                </propertyInstance>
+                                <elementDefinition Id="7e67b075-132a-4603-b799-143ffe67937c" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="98215650-1fb4-4eae-8e23-93ae8d6eb8cf" />
+                      </operation>
+                      <operation Id="8cd63f80-4957-4962-b121-c597fe04a085" name="getModele" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="0f77f869-91e4-4073-8be4-e19aadf93450" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="5579bd1e-c00d-473e-a4f8-3d514c9aea82" name="VueDesImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="0942b5f8-e530-43ee-8a70-16b3fc4ef82a" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="593368bd-1169-465b-87b4-d26709ed7026">
+                        <interfaceMoniker Id="f3a11c18-73c1-4e41-a133-fd988046b8fe" LastKnownName="VueDes" />
+                        <elementDefinition Id="dedee6ca-9af1-43d6-894d-182f704ce450" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="b5b1a713-f9b2-4e20-be4a-242872593657" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="aed1c80d-d807-4fd7-8215-87cc2cb43638" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="13a36f87-5302-4934-8c15-a22870d396bd" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="1e60d2a8-1a5c-4519-b2d9-6657c8d4ee99">
+                                <propertyInstance Id="cf965a82-bf98-4f24-ba25-0e07c3dafc83" name="ClrAttributes">
+                                  <elementDefinition Id="c86d3559-efcd-472a-86cb-4ffbfbf53b50" />
+                                </propertyInstance>
+                                <elementDefinition Id="137f6c93-b100-46bf-9c88-87e318a2d585" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="ae84ffc8-b69a-4e36-973c-3e6e0b5a0cc5">
+                                <propertyInstance Id="db3555f8-46bc-4b22-abee-749441b4b71d" name="IsPartial" value="false">
+                                  <elementDefinition Id="7f20f185-2bd5-414e-8c7c-79e11af28c97" />
+                                </propertyInstance>
+                                <elementDefinition Id="deb60814-b70d-442c-9089-26d6e07e5399" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="1c19ef28-cafd-424f-a545-ad9c9a5a64f0">
+                                <propertyInstance Id="a60f4560-e376-443b-bbe7-14691ea37822" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="dd0e316c-069f-4f5c-9779-42ec380e43f7" />
+                                </propertyInstance>
+                                <elementDefinition Id="36358ca1-a6e9-4ba8-bc63-0ac248874ed9" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="be150a10-69c3-4d3f-ae91-6c937c0320c9">
+                                <propertyInstance Id="dd5c2e18-818b-4165-8833-1cff3d69b007" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="ec56c8ed-c39f-4893-8341-a2fe6f576d6b" />
+                                </propertyInstance>
+                                <elementDefinition Id="0e40ad13-313e-4cd6-99e7-5dd3bbe05824" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="c90df596-dcf8-46d1-99bc-0d8adb6984ea">
+                                <propertyInstance Id="490a08c0-b5b9-4020-b0ab-30613b33d2b0" name="params" value="false">
+                                  <elementDefinition Id="62fb3f3f-faa1-41c0-af75-25a681797c28" />
+                                </propertyInstance>
+                                <elementDefinition Id="9053026f-d828-48a6-b71e-3ba937405a48" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="ef85f957-89d5-41ab-91fa-ea441e80dfa7" />
+                      </operation>
+                      <operation Id="968bbc01-49a1-4273-afbd-260d06553efe" name="getModele" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="eb04704c-f7d3-4152-a13a-fd414f6af300" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="9e9af19c-2a0a-4660-9ad8-e31721d7003e" name="VueVaisseauImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="f4c5f525-b0e5-4303-94a9-1d37ad0ee0a0" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="ddb70b69-f8a7-4870-8219-b4f489da05c0">
+                        <interfaceMoniker Id="2d48120e-c6af-449f-b904-bad9532229fe" LastKnownName="VueVaisseau" />
+                        <elementDefinition Id="99e33ced-02c3-4bc7-83b2-3ed8d27674e7" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="9fc4b560-6a9b-4619-8d50-5d43e1dbe979" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="bb0b48df-0b23-40c2-a92b-c5f06a1fe4ec" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="3065d2c0-6e2d-4492-b75e-da1ee20969c9" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="542525cb-03cb-41fd-87fb-23a562991dfe">
+                                <propertyInstance Id="a1fae840-502a-4824-8b7d-0e372bbfd195" name="ClrAttributes">
+                                  <elementDefinition Id="2992264c-40e8-4e4a-801a-2745e73baaee" />
+                                </propertyInstance>
+                                <elementDefinition Id="d3320c07-dc8a-4c8b-8bcd-74371dc24863" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="5680ab47-2691-4804-90ff-418e7375431d">
+                                <propertyInstance Id="b511a01f-350e-4419-a75d-54b077fc49be" name="IsPartial" value="false">
+                                  <elementDefinition Id="ff5dc656-644b-43c6-92e0-8d575a4b73e6" />
+                                </propertyInstance>
+                                <elementDefinition Id="d8276e3f-04cd-4691-a94c-65779aea0e30" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="8d760a1a-3931-4c1b-b41f-4cb0a9713e1c">
+                                <propertyInstance Id="89b9c45c-4660-4907-be47-534d34dbdb9d" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="a3bca0f8-5896-4943-9a8a-0837bd73c5cd" />
+                                </propertyInstance>
+                                <elementDefinition Id="3fbd307c-b5ba-4e61-9f50-89091d1d2289" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="c4c381e0-1696-428e-89c9-2f4e59b7e14f">
+                                <propertyInstance Id="d324ccee-3ab3-41bd-abfe-673942d3cf81" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="e5c448cb-9a58-47f1-a74f-71ff66e22f22" />
+                                </propertyInstance>
+                                <elementDefinition Id="907cbf8a-2dae-4a44-8610-3060f62848a5" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="ed7113b9-37ea-4889-be69-c52397d2bd00">
+                                <propertyInstance Id="f6d6e221-59c3-49a4-b686-33feb302a813" name="params" value="false">
+                                  <elementDefinition Id="e5f71821-2279-4d2e-966f-3c1dff519d80" />
+                                </propertyInstance>
+                                <elementDefinition Id="f10c4243-172a-4e47-aea0-db0c6f41a6c5" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="33eb944d-abb3-4512-8463-9e0748832a3d" />
+                      </operation>
+                      <operation Id="faaa7391-2e31-43af-951f-0508f9ad3683" name="getModele" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="8f188b39-52d9-4d3b-a0ce-36d61570350a" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="8b22074d-9c8c-4d26-8cae-0e32992aaee9" name="VueFabriqueImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="13effda2-8cb3-4faf-add6-d0e9698cfc2d" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="be96b96d-b2b8-4a52-893a-0cdf3d9e773a">
+                        <interfaceMoniker Id="f4402b4b-f420-4014-ac00-c0babe9fa704" LastKnownName="VueFabrique" />
+                        <elementDefinition Id="8e70b489-0af0-45ab-9606-779cb9430f67" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="bde34828-f158-4ccb-99f9-4fca076f98d6" name="creerVuePlateau" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="eea32142-9cae-43f7-86d0-c879f5292862" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="201fb5eb-2cd5-4256-8867-22672b5e5a30" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="200dd771-5570-438c-b0a1-760ae6af3952">
+                                <propertyInstance Id="8c70a583-9384-487d-aebb-7e6c80cc42e5" name="ClrAttributes">
+                                  <elementDefinition Id="672a20a6-253f-41c1-bfd5-0dd86b167f2a" />
+                                </propertyInstance>
+                                <elementDefinition Id="d44dc847-c480-4c21-a539-c208099e8911" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="48d83a69-d032-4f0c-86ae-1edfd4d0c3bb">
+                                <propertyInstance Id="50b319c0-d5b9-4e07-8afb-ec68b743d234" name="IsPartial" value="false">
+                                  <elementDefinition Id="31177257-49c5-4bab-b9e3-f5f431dec380" />
+                                </propertyInstance>
+                                <elementDefinition Id="dc3b8948-79ec-474b-96a9-da25ce7e78dd" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="504dd916-7d9a-421f-8d06-58c77494f7e3">
+                                <propertyInstance Id="dce229ea-ead5-44c1-9901-b864d3fa0e43" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="121a01eb-80c8-4ead-a332-4d25f932db83" />
+                                </propertyInstance>
+                                <elementDefinition Id="9984040c-d04f-4b29-b94d-4774090ad219" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="e4927978-26cf-4d81-aa27-ff30e7ca7148">
+                                <propertyInstance Id="7a4f3b5c-8b2a-475f-bcac-2c1be342a20c" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="d5b75dd9-c892-4e7c-95fd-34ac4a99b4ee" />
+                                </propertyInstance>
+                                <elementDefinition Id="c5fc06e0-a03d-4734-8930-d505bf1fef99" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="0a0c5fa6-976c-40a2-bca5-60303ce37f39">
+                                <propertyInstance Id="70de98d7-13d0-4471-8dc2-75fced827859" name="params" value="false">
+                                  <elementDefinition Id="9405aec5-f9c9-46e4-a8fc-26fc47016665" />
+                                </propertyInstance>
+                                <elementDefinition Id="cb638b2d-c5d2-4f56-93be-636de6f64ce4" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="23ca17b3-5e35-4312-833b-b9043c571b9f" />
+                      </operation>
+                      <operation Id="37150e97-311e-4221-9107-6559e668b42e" name="creerVueVaisseau" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="12a01419-3c09-45ff-bf25-d43692c9a03e" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="a63c83f9-e9c8-420f-ac18-d4df39898b67" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="a1003b09-04f1-4db8-b6ca-6dd5300d59fa">
+                                <propertyInstance Id="148d4639-9862-444a-b95f-2e5d9191a5a7" name="ClrAttributes">
+                                  <elementDefinition Id="fac493b8-a9f8-4765-b8f1-655cabae5e6d" />
+                                </propertyInstance>
+                                <elementDefinition Id="b797bfe4-ba4d-4beb-aaaa-a2ac50992421" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="624138cc-8357-4ee6-a1ee-f762fdde8487">
+                                <propertyInstance Id="569c40f0-179b-4de0-923f-4873f65b39f0" name="IsPartial" value="false">
+                                  <elementDefinition Id="2aa81f43-f61a-4f56-8181-5731637d57e3" />
+                                </propertyInstance>
+                                <elementDefinition Id="49999d77-396a-434a-823d-1ee9e99080fe" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="5e94c46c-5a5e-44d7-a626-893e30adb06a">
+                                <propertyInstance Id="6983b45e-2f68-4f02-aa2f-9db94754d232" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="2aaaabdb-e008-42ed-802c-2199c6523144" />
+                                </propertyInstance>
+                                <elementDefinition Id="32e75985-4787-463d-a451-c654e5a814f6" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="e058ee41-ba18-4c06-8578-94a3a3b15e53">
+                                <propertyInstance Id="cc9dec91-2997-432c-a4bf-8c428f4f213c" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="874a8426-2995-41c0-9e1b-41bd5f0786f2" />
+                                </propertyInstance>
+                                <elementDefinition Id="fb2323b3-9d82-45a9-9e04-58580889b70f" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="c6f89b89-36dc-4360-9eaf-4f14dfea6303">
+                                <propertyInstance Id="fe7d9d0c-d6cb-4622-8a1a-f08269f7f100" name="params" value="false">
+                                  <elementDefinition Id="e9fb4eac-bc32-4f25-85e5-129b609cb85f" />
+                                </propertyInstance>
+                                <elementDefinition Id="5034edcc-50e0-4141-b0f1-03bda254773d" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="daff390a-96ae-4ec8-9364-56eda4a6eb31" />
+                      </operation>
+                      <operation Id="96ffba1d-433e-4d27-8c5d-049925faa464" name="creerVueDes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <appliedStereotypesInternal>
+                          <stereotypeInstance Id="40fbdf9a-3063-45d6-8a5e-b28823285722" name="method" profile="CSharpProfile">
+                            <elementDefinition Id="2fc60b1b-daca-42a1-b45a-b0d2895bbdef" />
+                            <propertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="507e9508-d38d-4b5d-bc4d-e51ba8d9087b">
+                                <propertyInstance Id="527f103c-0c63-4dbd-8fcd-29d6700c14fc" name="ClrAttributes">
+                                  <elementDefinition Id="6e505cb8-4eba-42ff-b60d-1bba8782e773" />
+                                </propertyInstance>
+                                <elementDefinition Id="01b23d58-d7fa-4222-a17e-3a439cfef34b" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="3c7d2611-fdd1-4b30-9f0d-e1f319056841">
+                                <propertyInstance Id="dc2f4a66-d1ce-48a2-836e-5a6d556b5893" name="IsPartial" value="false">
+                                  <elementDefinition Id="0d46da97-6913-468e-abeb-b54c91cfdb88" />
+                                </propertyInstance>
+                                <elementDefinition Id="6a031887-ac3a-4075-a961-919cf3ea80f7" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="aa80b0fe-48f8-4008-b0cd-bf9ce0466ede">
+                                <propertyInstance Id="0b6ec296-e259-4815-9cd4-4a9abd46e6cd" name="IsUnsafe" value="false">
+                                  <elementDefinition Id="3099610a-f6eb-4a05-aee0-6fc822153475" />
+                                </propertyInstance>
+                                <elementDefinition Id="fab889f5-f894-49db-a9c7-e0da0378530a" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="38a6b6db-f529-42fa-9c9c-6b791d05a3c2">
+                                <propertyInstance Id="8289ec78-4b68-4276-9b77-d226c4571c1f" name="PackageVisibility" value="internal">
+                                  <elementDefinition Id="c6b84a6c-40de-40b8-9051-b31579d8586b" />
+                                </propertyInstance>
+                                <elementDefinition Id="63300cd8-e31a-4c07-9cf1-964982a9e629" />
+                              </stereotypeInstanceHasPropertyInstances>
+                              <stereotypeInstanceHasPropertyInstances Id="a85ed524-fb1b-4ecd-8510-cced3ab19db4">
+                                <propertyInstance Id="e0d21270-810b-4692-9f4c-e0fba26c116e" name="params" value="false">
+                                  <elementDefinition Id="a92ca7de-0b96-4de5-b36c-11414444bb9b" />
+                                </propertyInstance>
+                                <elementDefinition Id="f67d00f4-f75f-4c4b-a6c4-a89d034edf7e" />
+                              </stereotypeInstanceHasPropertyInstances>
+                            </propertyInstances>
+                          </stereotypeInstance>
+                        </appliedStereotypesInternal>
+                        <elementDefinition Id="b6749ef1-bfd5-4920-a086-a1a0234e74de" />
+                      </operation>
+                      <operation Id="308e8d5e-66ee-43d1-b9e9-0dd4e3239759" name="creerVueMenuPrincipal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="564eb749-a0c1-4999-b35d-f10fe2d1d2ac" />
+                      </operation>
+                      <operation Id="9b5965f1-adde-40da-b3e7-e6289126d292" name="creerBoutonCreerPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="3e4d4fd0-c644-4cb8-a598-4d103db63da3" />
+                      </operation>
+                      <operation Id="5b8cb227-2e80-44c9-a42a-6599163edc81" name="creerBoutonQuitterJeu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="159c9953-57ed-49d0-930e-f6fbe2825533" />
+                      </operation>
+                      <operation Id="404b55df-2d09-41ca-8bfc-19842d34b2a3" name="creerVueMenuPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1d33a315-c1ea-453d-9970-f7e29e121091" />
+                      </operation>
+                      <operation Id="138b2cff-b68a-4dca-aaf3-907b3de0cf0d" name="creerVueFenetreJeu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="9346056e-a98d-4899-90e2-9fa65d3dfb61" />
+                      </operation>
+                      <operation Id="22f39ef9-d318-40cb-9d49-05caa594bfa8" name="creerBoutonLancerPartie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="7b78eac5-39fc-4d53-86d1-09303b17f410" />
+                      </operation>
+                      <operation Id="6d4ba9cf-95d6-40ea-9b94-80de0d97f39f" name="creerVueColonneInformations" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="3563655c-6bbf-4c85-8ba1-ceb8e2b60ed8" />
+                      </operation>
+                      <operation Id="85baff63-dc53-418d-bfea-086347d7e1c7" name="creerVueGestionTir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="edaa3244-fc0b-4239-9de5-303189b4c61e" />
+                      </operation>
+                      <operation Id="d2c05d6e-c250-4f8b-b618-2293daaba0c2" name="creerBoutonTirer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="42b12019-8b62-441b-89b8-81bc330da663" />
+                      </operation>
+                      <operation Id="c55088dd-d4d6-4de7-9bc0-c225a12c5f68" name="creerBoutonDeposerArtefact" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="c1683c38-d958-42c8-a1e2-d5abfbc9737d" />
+                      </operation>
+                      <operation Id="b2bd016d-d72e-4b94-b125-3420b5131895" name="creerBoutonPrendreArtefact" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="9a1fff02-d626-440d-959b-3aa71158608a" />
+                      </operation>
+                      <operation Id="e6ded325-092b-4e0e-9a28-81b07fad5c67" name="creerBoutonChargerEnergie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="c708576a-b9fe-4a8f-b559-e6ad17f3be18" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="c8828c19-f65d-4e1a-a431-7f92850a20bd" name="VueMenuPrincipalImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="7b680cc5-0ae2-4674-8909-21de758c220a" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="22d7f362-940e-4012-bef4-b5f7d8c2f431">
+                        <interfaceMoniker Id="647f21dc-7a16-4c09-bf44-6a7aebfb3eb2" LastKnownName="VueMenuPrincipal" />
+                        <elementDefinition Id="bb5d26cc-c273-4c53-9920-4ec3963da049" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <targetEnds>
+                      <association Id="fc4b9265-a400-4865-aa47-f181fbfb4525" isDerived="false" sourceEndRoleName="VueMenuPrincipalImpl" targetEndRoleName="BoutonCreerPartieImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="53d0808e-9524-4ab8-b3aa-49f2e00c84ec" LastKnownName="BoutonCreerPartieImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="7dcea817-7876-4090-95fd-ecb00a658193" name="VueMenuPrincipalImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="1350b1c7-8c19-4eff-951b-1a6b3dbb3c52" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="ba5d0997-66d5-43da-b327-cc035a22f2f0" name="BoutonCreerPartieImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="f007ad70-44c8-4faf-903f-a77dd6b68552" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="4b120e95-5f3d-475a-912a-c7ce1d9b7921" />
+                      </association>
+                      <association Id="ce200935-e267-4efb-a653-4239001e31b0" isDerived="false" sourceEndRoleName="VueMenuPrincipalImpl" targetEndRoleName="BoutonQuitterJeuImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="acbade65-6a76-40c2-9f84-66269be5d876" LastKnownName="BoutonQuitterJeuImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="e5a15cf0-c9ad-4f2b-91e8-7565040fe04a" name="VueMenuPrincipalImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="c5b93144-907d-46df-ab04-fc253647d941" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="70507836-249f-4d60-aec2-46a264fde3ec" name="BoutonQuitterJeuImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="50803e37-ea55-4f5a-8ff1-cbed3dbf2a25" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="b816dc37-91ba-40bc-9acc-a3e70a10d9a1" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperationsInternal>
+                      <operation Id="ceeae50c-5b4e-4c32-90fd-f388206b655c" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="21b32f89-e738-4ac3-8965-b569eabbb379" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="074c0f8f-7d34-4bd3-b516-91c92567461e" name="VueMenuPartieImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="fe087fa2-a2ea-4aa9-9f8a-91430cb9f8dc" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="ee482b62-bf62-499c-81cd-c821396f4243">
+                        <interfaceMoniker Id="d75e91a4-9cb3-4b18-a810-f6a1c17996e2" LastKnownName="VueMenuPartie" />
+                        <elementDefinition Id="e34b0fd0-e82c-4a50-b02d-312dd1cc5dfc" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <targetEnds>
+                      <association Id="9d4026c2-4ea8-41d7-be54-efd90769605f" isDerived="false" sourceEndRoleName="VueMenuPartieImpl" targetEndRoleName="BoutonLancerPartieImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="b7fc742b-6e52-4c94-9554-fd340f27b808" LastKnownName="BoutonLancerPartieImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="5d8e76c8-2677-4a81-aed1-154d1b5d0ece" name="VueMenuPartieImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="bea44237-7ece-43f7-9f33-d2868f59cc90" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="d88f919d-111e-4417-9cd7-9ec6b1b738e6" name="BoutonLancerPartieImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="451f8de1-655e-408d-822c-dd07d8d32c8b" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="7d1b5bdf-19fa-49f0-b99a-8e778714757b" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperationsInternal>
+                      <operation Id="83dd8083-d996-42c2-94ec-5ba2f03e9b6d" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="78e821b3-9b3c-4090-9ec6-728192b7c11c" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="90c1a81f-d3a2-4821-9066-279e1789561c" name="VueFenetreJeuImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="b931cf61-3b40-4bb2-a1e4-bd3f4f8b4cb5" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="36a708b1-3c56-41f1-9c44-00264f79b6d1">
+                        <interfaceMoniker Id="762d694f-190d-4d17-a979-0544668246fb" LastKnownName="VueFenetreJeu" />
+                        <elementDefinition Id="00a664f6-cc7a-4afe-a6f7-7ff399f5e0de" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <targetEnds>
+                      <association Id="f79fb1bb-74c8-44e4-a86a-1f3a89614380" isDerived="false" sourceEndRoleName="VueFenetreJeuImpl" targetEndRoleName="VuePlateauImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="405d39d1-4f17-41f2-bce1-66a293550eed" LastKnownName="VuePlateauImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="00e230d1-b6f7-4cd6-994a-aa8112bce0d4" name="VueFenetreJeuImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="22abc9cb-a6bd-4d59-8fbd-8d1c6df25456" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="88e58194-5a84-4416-b8fe-0f1bf8ab45ee" name="VuePlateauImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="1eb4bfc7-ed5a-45c7-97c9-e1444abd93fd" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="463045f6-66ad-47fa-b983-782c706d3544" />
+                      </association>
+                      <association Id="bfd8b1a5-350a-40a7-b1f1-7030c5eaaa85" isDerived="false" sourceEndRoleName="VueFenetreJeuImpl" targetEndRoleName="VueColonneInformationsImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="8d1735ba-56fa-47f9-849b-6e0c556ed0b9" LastKnownName="VueColonneInformationsImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="4d2395cf-ee2b-441c-953b-bf883a608fa3" name="VueFenetreJeuImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="ccedb12b-52d3-4052-8936-0e63c6966d85" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="1642c92c-3056-45ce-947c-ab3597cdd704" name="VueColonneInformationsImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="4e4c9fa8-83ac-4bed-87a1-a607711f6eab" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="68239ad9-f4bb-4d7a-9a01-1a9c6e2326d6" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperationsInternal>
+                      <operation Id="6f96c1de-b1b3-4757-84bf-071febb96753" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="80332c5c-0b4f-4f40-a611-92c6146cc487" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="8d1735ba-56fa-47f9-849b-6e0c556ed0b9" name="VueColonneInformationsImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="059754bf-00c5-4faf-b798-dd363bf794b9" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="2df1075d-0e2e-4ef0-8fd5-fe69d3ee5384">
+                        <interfaceMoniker Id="58bf9100-e275-48fa-9a4d-0dfef1c99f83" LastKnownName="VueColonneInformations" />
+                        <elementDefinition Id="f0fc5a69-6653-4d9d-9e7b-1cef21248dd7" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <targetEnds>
+                      <association Id="b24a0ca2-f3de-4ffc-afac-075a3578904c" isDerived="false" sourceEndRoleName="VueColonneInformationsImpl" targetEndRoleName="VueDesImpl" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="5579bd1e-c00d-473e-a4f8-3d514c9aea82" LastKnownName="VueDesImpl" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="19febab1-8bb4-4423-a73e-2e8eac7438bb" name="VueColonneInformationsImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="1644a9af-9364-48cc-90c3-d573ecdea74c" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="dc43405d-ddca-4258-af07-a19fb810abd3" name="VueDesImpl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="11bfa28f-eedf-4adf-94d6-1bf793477bfd" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="eb27ddad-b2f5-4ea8-bbed-6ce1c737638b" />
+                      </association>
+                    </targetEnds>
+                    <ownedOperationsInternal>
+                      <operation Id="0da503c0-473c-49de-90f5-ce4e90975aa6" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="ff478fe5-031d-4549-aa39-551c2e52d4a3" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="53d0808e-9524-4ab8-b3aa-49f2e00c84ec" name="BoutonCreerPartieImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="749a918f-1e9b-4f04-8f03-fce81907a195" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="ec6dcd92-7cd3-4609-858d-3ceebd385f0f">
+                        <interfaceMoniker Id="27889165-856c-483f-bf25-0d8bcb17a6fb" LastKnownName="BoutonCreerPartie" />
+                        <elementDefinition Id="f573d210-300d-4e3d-809c-bb15cd4b99c6" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="acbade65-6a76-40c2-9f84-66269be5d876" name="BoutonQuitterJeuImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="9b4aa5fe-c5f0-4dab-aaef-532110ccb112" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="e087fd67-c0dc-4ba8-964a-bdd9ee7667c1">
+                        <interfaceMoniker Id="9414d0f1-40f4-48bb-8417-7651fbc77369" LastKnownName="BoutonQuitterJeu" />
+                        <elementDefinition Id="478e86bc-b6c1-4841-a166-c890ea6a1198" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="b7fc742b-6e52-4c94-9554-fd340f27b808" name="BoutonLancerPartieImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="f8e7483d-df91-4c5f-a437-9d914d345d59" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="e52a8a3e-2844-4711-a5e6-08e3650bb679">
+                        <interfaceMoniker Id="9f224aa5-0d71-48e2-82da-941e6d8c9c97" LastKnownName="BoutonLancerPartie" />
+                        <elementDefinition Id="e9c0bead-b3ba-4daf-a6db-46722d525f09" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="9ec1d0a7-0403-40c9-bdfe-c487d2de1d40" name="BoutonTirerImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="dbe750a9-86c5-459f-a29a-641f6b8ef0e4" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="473a0a7b-77a4-4ec8-938c-98d34809f51c">
+                        <interfaceMoniker Id="ec63c77e-293a-417d-94cd-3937da1c3f5f" LastKnownName="BoutonTirer" />
+                        <elementDefinition Id="d499b66d-6a49-4cb6-bb0e-22e05a0fc8d6" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="698e63bf-4675-4820-98c3-2b164b60a9cb" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="74504760-ba7d-44a4-938d-78ef0a71ec23" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="5a9d76c4-638f-457a-9793-729b6e95a9ca" name="BoutonDeposerArtefactImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="e54d0440-4738-4eab-9ce8-150fa79508da" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="73e0423a-f185-4dff-9d5f-bbdbdc7b8940">
+                        <interfaceMoniker Id="c8eaf662-bde9-4798-9bf3-a70482a72930" LastKnownName="BoutonDeposerArtefact" />
+                        <elementDefinition Id="028e5eb3-bd6f-4c14-b496-b504618ba9f7" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="99b8669d-ccb2-4ac6-a609-80b207777d28" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="a045cd25-f4ad-44a0-961d-731df56c88b7" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="c097c3e4-2ab7-4226-a26b-abb90be231ef" name="BoutonPrendreArtefactImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="c1cb8e1c-cc6b-4056-94bf-a6c9b6c0b759" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="1ec377dc-eb32-446a-9196-effb469b254f">
+                        <interfaceMoniker Id="b80b7047-9bfd-448d-b465-9dbc03015965" LastKnownName="BoutonPrendreArtefact" />
+                        <elementDefinition Id="c90245c1-2894-4e38-91e0-727b373d6ee6" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="f0380165-bb3b-436f-b403-d64f13fad227" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="fb5126b4-8b83-4bf7-af6d-867bcf43fe81" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="ec9c1783-6011-4a92-96cc-ac2f689401f6" name="BoutonChargerEnergie" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="0048254d-a83c-496a-a31a-b86dc1c25c3b" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="c04b1d65-69a7-457e-acd3-25eec6a91392">
+                        <interfaceMoniker Id="04c6c3aa-9065-402b-9081-e439df84fca0" LastKnownName="BoutonChargerEnergie" />
+                        <elementDefinition Id="39d869c4-f76b-457a-91e4-0770dd288f96" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="4cb69fcb-76d8-402e-9bac-2b5bcacbddd8" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="8f955a0b-bc05-44e2-8336-c2b6c2d73774" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9dd8af58-86a9-413a-99fe-af6ac46e9fba" name="Observer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="924e379c-2880-441a-89a7-ab884481843e" />
+        <ownedOperations>
+          <operation Id="780d50a1-dc4b-4637-8c33-62c5858a5eaf" name="update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="12ef47c3-3df9-43d1-ace6-58a87303108c" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="df4ce930-a6a5-49e8-a6fa-57f90edbb8b8" name="SpaceBattle">
+    <elementDefinition Id="9fcf0bb9-0b67-472d-bc9e-6f423d18d444" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6cc9b5e2-1f53-4311-9a5e-9a3e13e964e3">
+        <profileInstance Id="0ef4a4c6-c73e-4580-9b27-130367ed4f59" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0f9f6790-82b0-4dfb-b70b-966eedf369cd">
+        <profileInstance Id="de5cc9ff-fd96-46d5-95cd-e72341affdf7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="03d9e2f0-7dad-4ce7-9774-658078c7a397">
+        <profileInstance Id="36460a68-7475-4a99-ae15-14226871361e" name="CSharpProfile">
+          <elementDefinition Id="7110254b-55b4-47f0-8883-1829a9c03c52" />
+        </profileInstance>
+        <elementDefinition Id="62e31fd0-6bbc-4945-8bad-e0021ff8a9d7" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c5185a8e-eeb8-447f-87af-4029e8b5a7f0">
+        <profileInstance Id="6bbb36a5-8423-4888-83cd-c9c1c7b14a53" name="TextTemplateBindings">
+          <elementDefinition Id="cb05c709-5b22-4534-b1d0-ce0e2ce3a74e" />
+        </profileInstance>
+        <elementDefinition Id="ad5f4e12-a9e8-4268-9465-ea0f1a2f3c2e" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
